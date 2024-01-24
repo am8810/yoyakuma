@@ -177,12 +177,18 @@
                 価格は現地で算定される場合は、「予約時に価格は算定されません」にチェックを入れてください。</p>
                 <table>
                     <tr>
+                        @if($reservepage->price != -1)
                         <th><input type="number" name="price" id="reservepage-price" class="form-control" value="{{ $reservepage->price }}" placeholder="0000"></th>
                         <td>円（税込）</td>
+                        @endif
+                        @if($reservepage->price == -1)
+                        <th><input type="number" name="price" id="reservepage-price" class="form-control" value="" placeholder="0000"></th>
+                        <td>円（税込）</td>
+                        @endif
                     </tr>
                 </table>
                 <p class="or">or</p>
-                <input type="checkbox" name="price" id="none-price" value="予約時に価格は算定されません" {{ $price == '予約時に価格は算定されません' ? 'checked' : '' }}> 予約時に価格は算定されません
+                <input type="checkbox" name="price" id="none-price" value="-1" {{ $price == '-1' ? 'checked' : '' }}> 予約時に価格は算定されません
                 <p class="required">
                 @if ($errors->has('price'))
                   {{$errors->first('price')}}
