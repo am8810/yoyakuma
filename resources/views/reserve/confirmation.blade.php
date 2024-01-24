@@ -44,7 +44,7 @@
                                 @endif
         	　                </th>
             	　            <th><strong>{{ $reservepage->name }}</strong><br>
-                                @if($reservepage->price =='予約時に価格は算定されません')
+                                @if($reservepage->price =='-1')
                                 ※ 予約時に価格は算定されません
                                 @elseif($reservepage->price =='0')無料
                                 @else
@@ -63,7 +63,7 @@
             	　        <tr>
             	　            <th class="conf-t-l">合計金額</th>
             	　            <th>
-                                @if($reservepage->price =='予約時に価格は算定されません')
+                                @if($reservepage->price =='-1')
                                 ※ 予約時に価格は算定されません
                                 @elseif($reservepage->price =='0')無料
                                 @else

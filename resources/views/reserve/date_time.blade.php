@@ -25,7 +25,7 @@
             	    <div class="box">
                 	    <h4>{{ $reservepage->name }}</h4>
                 	    <p class="price-0">                                
-                            @if($reservepage->price =='予約時に価格は算定されません')
+                            @if($reservepage->price =='-1')
                             <small>※ 予約時に価格は算定されません</small>
                             @elseif($reservepage->price =='0')無料
                             @else

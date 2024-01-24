@@ -13,7 +13,7 @@
 予約対象：{{ $reservepage->name }}<br>
 予約日時：{{ \Carbon\Carbon::createFromDate($calendar->date)->format('Y年m月d日') }}（{{ $calendar->start_time }} - {{ $calendar->end_time }}）<br>
 予約人数：{{ $do_reserve->do_capacity }} 人<br>
-合計金額：@if($reservepage->price =='予約時に価格は算定されません')※ 予約時に価格は算定されません
+合計金額：@if($reservepage->price =='-1')※ 予約時に価格は算定されません
             @elseif($reservepage->price =='0')無料
             @else
             {{ number_format($reservepage->price * $do_reserve->do_capacity) }}円（税込）

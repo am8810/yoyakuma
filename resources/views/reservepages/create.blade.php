@@ -162,7 +162,7 @@
                         </tr>
                     </table>
                     <p class="or">or</p>
-                    <input type="checkbox" name="price" id="none-price" value="予約時に価格は算定されません"> 予約時に価格は算定されません
+                    <input type="checkbox" name="price" id="none-price" value="-1"> 予約時に価格は算定されません
                     <p class="required">
                     @if ($errors->has('price'))
                       {{$errors->first('price')}}
