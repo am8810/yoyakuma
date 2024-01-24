@@ -278,8 +278,8 @@
                   <table>
                       <tr>
                           <td>※</td>
-                          <td>zoomサポートを行うには、ご使用のパソコンにzoomをインストールする必要があります。zoomのインストールは以下のボタンからデータをダウンロードして行ってください。<br>
-                          <a href="{{ asset('uploads/zoomusInstallerFull.pkg')}}" role="button">zoomダウンロード <i class="fas fa-angle-right"></i></a></td>
+                          <td>zoomサポートを行うには、ご使用のパソコンにzoomをインストールする必要があります。以下のボタンから、zoomサイトにてzoomをダウンロードしてインストールを行ってください。<br>
+                          <a href="https://zoom.us/ja/download" target="_blank" role="button">zoomサイト <i class="icon-another-window_w"></i></a></td>
                       </tr>
                       <tr>
                           <td>※</td>
@@ -349,8 +349,7 @@
               <input type="checkbox" id="menu_bar-3_04" />
               <label for="menu_bar-3_04">Ｑ4. 予約完了ページと、予約完了のお知らせメールに記載されている、お問い合わせ先は変更できますか？</label>
               <ul id="links-3_04">
-                <li><span class="answer">Ａ</span>　 予約完了ページと、予約完了のお知らせメールに記載されているお問い合わせ先は、会員情報の「企業名・屋号名・団体名」「電話番号」「メールアドレス」が表示されます。<br>
-                「会員情報の編集」で「企業名・屋号名・団体名」と「電話番号」は変更が可能ですが、「メールアドレス」は変更ができない仕様となっております。</li>
+                <li><span class="answer">Ａ</span>　 予約完了ページと、予約完了のお知らせメールに記載されているお問い合わせ先は、会員情報の「企業名・屋号名・団体名」「電話番号」が表示されます。「会員情報の編集」で変更が可能です。</li>
               </ul>
 
               <input type="checkbox" id="menu_bar-3_05" />

@@ -29,9 +29,9 @@
                 送信内容をご確認後、1〜3日以内にご返信をさせていただき、zoomサポートを行う日程候補日を送らせていただきます。<br>
                 <br>
                 zoomサポートを行う為、ご使用のパソコンにzoomを事前にインストールしておいていただければと思います。<br>
-                zoomのインストールは以下のボタンからデータをダウンロードして行ってください。</p>
+                以下のボタンから、zoomサイトにてzoomをダウンロードしてインストールを行ってください。</p>
                 
-                <a href="{{ asset('uploads/zoomusInstallerFull.pkg')}}" role="button">zoomダウンロード <i class="fas fa-angle-right"></i></a></td>
+                <a href="https://zoom.us/ja/download" target="_blank" role="button">zoomサイト <i class="icon-another-window_w"></i></a>
                 
                 <p>なお、しばらくたっても返信、返答がない場合は、ご入力いただいたメールアドレスに誤りがある場合がございます。<br>
                 その際は、お手数ですが再度送信いただくか、下記の連絡先までご連絡いただけますと幸いです。<br>

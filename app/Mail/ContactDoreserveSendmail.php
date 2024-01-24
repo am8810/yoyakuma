@@ -40,7 +40,7 @@ class ContactDoreserveSendmail extends Mailable
     {
         // buildメソッドはメールの内容を構築し、メールの送信に関する設定を行うためのメソッド
         return $this
-            ->from('yoyakuma@starting-design.com') // メールの送信元（From）のメールアドレスを設定
+            ->from('yoyakuma@starting-design.com', '【予約管理ならヨヤクマ】')  // メールの送信元（From）のメールアドレスと名前を設定
             ->subject("予約完了のお知らせ【{$this->reservepage->name}】") // メールの件名
             ->view('reserve.mail') // メールの内容を表示するビュー
             ->with([ // withメソッドを使用して、ビューにデータを渡す

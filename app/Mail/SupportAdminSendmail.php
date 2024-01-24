@@ -42,8 +42,8 @@ class SupportAdminSendmail extends Mailable
         $name = $request->input('name');
         
         return $this
-            ->from('yoyakuma@starting-design.com')
-            ->subject("「{$name}」様より　zoomサポート依頼【予約管理ならヨヤクマ】")
+            ->from('yoyakuma@starting-design.com', '【予約管理ならヨヤクマ】')  // メールの送信元（From）のメールアドレスと名前を設定
+            ->subject("「{$name}」様より　zoomサポート依頼")
             ->view('support.admin')
             ->with([
                 'name' => $this->name,

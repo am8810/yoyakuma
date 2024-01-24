@@ -27,8 +27,7 @@
     	<div class="comp-contact">
     	    <p>予約に関してのお問い合わせは、以下の連絡先までご連絡ください。</p>
     	    <h4>{{ $user->store_name }}</h4>
-    	    <p>電話番号：{{ $user->phone }}<br>
-    	    メールアドレス：{{ $user->email }}</p>
+    	    <p>電話番号：{{ $user->phone }}</p>
     	</div>
 
         <form method="POST" action="" >

@@ -150,12 +150,24 @@ class ReservepageController extends Controller
              
         // バリデーション設定
         $request->validate([
-            'name' => 'required', // requiredというルールを適用
+            'name' => 'required',
             'description' => 'required',
             'price' => 'required',
             'date_change' => 'required',
             'cancel' => 'required',
-            'inputform.*' => 'required',
+            'inputform' => [
+                'required',
+                function ($attribute, $value, $fail) {
+                    // 少なくとも1つのメールアドレスが存在するか確認
+                    $validEmails = array_filter($value, function ($email) {
+                        return !empty($email);
+                    });
+        
+                    if (empty($validEmails)) {
+                        $fail('※必須項目です');
+                    }
+                },
+            ],
         ]);
     
         $request->session()->put('reservepage', $reservepage); // セッションでreservepageキーで$reservepageの値をを保存
@@ -223,13 +235,26 @@ class ReservepageController extends Controller
     {
         // バリデーション設定
         $request->validate([
-            'name' => 'required', // requiredというルールを適用
+            'name' => 'required',
             'description' => 'required',
             'price' => 'required',
             'date_change' => 'required',
             'cancel' => 'required',
-            'inputform.*' => 'required',
+            'inputform' => [
+                'required',
+                function ($attribute, $value, $fail) {
+                    // 少なくとも1つのメールアドレスが存在するか確認
+                    $validEmails = array_filter($value, function ($email) {
+                        return !empty($email);
+                    });
+        
+                    if (empty($validEmails)) {
+                        $fail('※必須項目です');
+                    }
+                },
+            ],
         ]);
+        
          // 現在ログインしているユーザーを取得
         $user = Auth::user();
 

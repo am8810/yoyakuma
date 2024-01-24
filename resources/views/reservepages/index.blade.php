@@ -16,20 +16,7 @@
 
     <div class="m-container">
         <div class="member-top-body">
-            <h1 class="mypage-title">予約ページ編集</h1>
-            
-            <p class="edit-p">「基本情報」「日時・定員数」をクリックして編集を行なってください。</p>
-            
-            <div class="update">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>※</td>
-                            <td>更新日時は「基本情報」を更新した際の日時です。</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h1 class="editpage-title">予約ページ編集</h1>
             
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -53,6 +40,19 @@
                         </div>
                     <!-- 一つでも公開中の予約ページがある場合 -->
                     @else
+                        <p class="edit-p">「基本情報」「日時・定員数」をクリックして編集を行なってください。</p>
+                        
+                        <div class="update">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>※</td>
+                                        <td>更新日時は「基本情報」を更新した際の日時です。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
                         @foreach($reservepages as $reservepage)
                         <div id="reserve-edit" class="row">
                             <div class="col-sm-4">
@@ -97,6 +97,23 @@
                         </div>
                     <!-- 一つでも非公開の予約ページがある場合 -->
                     @else
+                        <p class="edit-p">「基本情報」「日時・定員数」をクリックして編集を行なってください。</p>
+
+                        <div class="private-note-t">
+                            <table>
+                                <tbody>
+                                    <tr class="about-private">
+                                        <td>※</td>
+                                        <td>非公開の予約ページは、ログイン状態の管理者にしか表示されません。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>※</td>
+                                        <td>更新日時は「基本情報」を更新した際の日時です。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         @foreach($reservepage_private as $reservepage)
                         <div id="reserve-edit" class="row">
                             <div class="col-sm-4">
@@ -123,15 +140,6 @@
                                 
                                 <p>更新日時：{{ \Carbon\Carbon::parse($reservepage->updated_at)->format('Y年n月j日 H:i') }}</p>
                                 
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>※</td>
-                                            <td>非公開の予約ページは、ログイン状態の管理者にしか表示されません。</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-        
                             </div>
                         </div>
                         <hr>

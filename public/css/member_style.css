@@ -145,35 +145,6 @@ label {
     .l-container {
       width: 1260px; } }
 
-.customer-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  .customer-container:before, .customer-container:after {
-    content: " ";
-    display: table; }
-  .customer-container:after {
-    clear: both; }
-  @media (min-width: 768px) {
-    .customer-container {
-      width: 750px; } }
-  @media (min-width: 830px) {
-    .customer-container {
-      width: 810px; } }
-  @media (min-width: 992px) {
-    .customer-container {
-      width: 930px; } }
-  @media (min-width: 1060px) {
-    .customer-container {
-      width: 990px; } }
-  @media (min-width: 1200px) {
-    .customer-container {
-      width: 1150px; } }
-  @media (min-width: 1400px) {
-    .customer-container {
-      width: 1260px; } }
-
 
 .m-container {
   margin-right: auto;
@@ -3398,6 +3369,23 @@ label {
  *    予約ページ編集
  * ================================================== */
 
+.editpage-title {
+  font-size: 36px;
+  text-align: center;
+  color: #f29600;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+.editpage-title {
+  font-size: 30px;
+  padding-bottom: 20px;
+}}
+@media (max-width: 575px) {
+.editpage-title {
+  font-size: 28px;
+}}
+
 .update {
   max-width: 321px;
   margin-left: auto;
@@ -3414,6 +3402,28 @@ label {
 .update td {
   font-size: 12px;
   color: #666666;
+}
+
+.private-note-t {
+  max-width: 441px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: -20px;
+}
+@media (max-width: 575px) {
+.private-note-t {
+  margin-top: -10px;
+  max-width: 100%;
+}}
+
+.private-note-t td {
+  font-size: 12px;
+  color: #666666;
+}
+
+.about-private td {
+  color: red;
 }
 
 #reserve-edit img {
@@ -3688,21 +3698,6 @@ hr {
 .private-note {
   margin-top: -27px;
 }
-
-.private-note table {
-  margin-top: -5px;
-}
-
-.private-note td {
-  font-size: 12px;
-  color: #f29600;
-  font-weight: 400;
-}
-@media (max-width: 575px) {
-.private-note table {
-  margin-top: 10px;
-  margin-bottom: -15px;
-}}
 
 .private-note h3 {
   padding-top: 46px !important;
@@ -4612,10 +4607,6 @@ hr {
     background-color: #8bd4ea;
 }
 
-.reservename-m {
-  width: 220px;
-}
-
 .past {
   margin-left: 30px;
   margin-bottom: 15px;
@@ -4671,6 +4662,10 @@ hr {
   margin-left: 0px;
   margin-top: 10px;
 }}
+@media (max-width: 575px) {
+.past-check {
+  margin-top: 15px;
+}}
 
 @media (max-width: 575px) {
 .past-w {
@@ -4689,6 +4684,14 @@ hr {
 #customer-list .pagination {
   margin-bottom: 15px;
 }
+
+#customer-list .text-nowrap {
+  white-space: normal !important;
+}
+@media (max-width: 1199px) {
+#customer-list .text-nowrap {
+  white-space: nowrap !important;
+}}
 
 
 /* ================================================== *
@@ -4813,7 +4816,7 @@ hr {
 }}
 @media (max-width: 575px) {
 .question img {
-  max-width: 100px;
+  max-width: 240px;
 }}
 
 .question p {
@@ -4826,7 +4829,7 @@ hr {
 }}
 @media (max-width: 575px) {
 .question p {
-  padding-top: 20px;
+  margin-bottom: 0;
 }}
 
 /*アコーディオン全体*/
@@ -4834,10 +4837,6 @@ hr {
   width: 100%;
     margin-top: 45px;
 }
-  @media (max-width: 767px) {
-  .menu {
-      margin-top: 30px;
-}}
 
 .menu h2 {
   font-size: 22px;
@@ -4845,6 +4844,10 @@ hr {
   color: #f29600;
   padding-bottom: 20px;
 }
+@media (max-width: 575px) {
+.menu h2 {
+  font-size: 18px;
+}}
 
 .menu img {
   max-width: 600px;
@@ -4852,6 +4855,10 @@ hr {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media (max-width: 829px) {
+.menu img {
+  max-width: 100%;
+}}
 
 .paid-btn a {
   font-size: 16px;
@@ -4881,7 +4888,7 @@ hr {
   display: block;
   text-decoration: none;
   color: #f29600;
-  line-height: 1.8;
+  line-height: 2.0;
   position: relative;
   margin: 0 0 -2px;
   padding: 30px 60px 30px 30px;
@@ -4895,8 +4902,11 @@ hr {
   @media (max-width: 767px) {
   .menu label {
       padding: 20px;
-      font-size: 16px;
       padding-right: 45px;
+}}
+  @media (max-width: 575px) {
+  .menu label {
+      font-size: 14px;
 }}
 
 .menu label:hover {
@@ -5120,6 +5130,10 @@ hr {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 }
+@media (max-width: 575px) {
+.answer {
+  font-size: 14px;
+}}
 
 .contact-link p {
   margin-bottom: 0px;
@@ -5156,13 +5170,13 @@ hr {
 }
 
 .zoom-note a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #00bde1;
   border: 1px solid #00bde1;
-  padding: 12px;
+  padding: 10px;
   display: block;
-  max-width: 200px;
+  max-width: 180px;
   text-align: center;
   transition: all 0.3s ease 0s;
   margin-top: 15px;
@@ -5327,6 +5341,16 @@ hr {
   margin-top: 5px;
   margin-bottom: 35px;
 }
+@media (max-width: 767px) {
+.s-form-title img {
+  max-width: 235px;
+  margin-top: 10px;
+}}
+@media (max-width: 575px) {
+.s-form-title img {
+  max-width: 210px;
+  margin-top: 15px;
+}}
 
 .s-form-title {
   border-bottom: solid #e6e6e6 1px;
@@ -5342,21 +5366,29 @@ hr {
   margin-bottom: 30px;
   margin-top: 5px;
 }
+@media (max-width: 575px) {
+.zoom_illust {
+  max-width: 235px;
+}}
 
 .s-form-note {
   background: #f2f2f2;
   padding: 25px 30px 15px;
   margin-top: 25px;
 }
+@media (max-width: 575px) {
+.s-form-note {
+  padding: 20px 15px 15px;
+}}
 
 .s-form-note a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #00bde1;
   border: 1px solid #00bde1;
-  padding: 12px;
+  padding: 10px;
   display: block;
-  max-width: 200px;
+  max-width: 180px;
   text-align: center;
   transition: all 0.3s ease 0s;
   margin-top: 15px;
@@ -5381,6 +5413,10 @@ hr {
   margin-top: 45px;
   margin-bottom: 15px;
 }
+@media (max-width: 575px) {
+.support-form img {
+  max-width: 230px;
+}}
 
 .support-form h3 {
   text-align: center;
@@ -5390,6 +5426,10 @@ hr {
   font-weight: 500;
   padding: 0px 0px 0px;
 }
+@media (max-width: 575px) {
+.support-form h3 {
+  font-size: 20px;
+}}
 
 .support-form table {
   max-width: 300px;
@@ -5429,6 +5469,10 @@ hr {
   margin-top: 45px;
   margin-bottom: 25px;
 }
+@media (max-width: 575px) {
+.what-trouble img {
+  max-width: 270px;
+}}
 
 .what-trouble textarea {
     width: 100%;
@@ -5446,10 +5490,18 @@ hr {
   background: #e5f8fc;
   padding: 40px 48px 20px;
 }
+@media (max-width: 575px) {
+.explain {
+  padding: 20px 20px 10px;
+}}
 
 .explain p {
   font-size: 14px;
 }
+@media (max-width: 575px) {
+.explain p {
+  font-size: 12px;
+}}
 
 .what-trouble p {
   color: #ff0000;
@@ -5524,13 +5576,18 @@ table-layout: fixed;
 }}
 
 .table-contactform7 input,
-.table-contactform7 textarea{
+.table-contactform7 textarea {
   width: 100%;
   padding: 15px;
   border: solid 1px #a9aaaa;
   font-weight: 300;
   font-size: 16px;
 }
+@media (max-width: 575px) {
+.table-contactform7 input,
+.table-contactform7 textarea {
+  font-size: 14px;
+}}
 
 .table-contactform7 select {
   font-weight: 300;
@@ -5646,7 +5703,7 @@ table-layout: fixed;
    .form-btn {
     height: 65px;
 }}
-  @media (max-width: 390px) {
+  @media (max-width: 575px) {
    .form-btn {
     width: 90%;
 }}
@@ -5729,7 +5786,11 @@ table-layout: fixed;
  .s-confirm {
    text-align: center;
  }
- 
+ @media (max-width: 575px) {
+ .s-confirm {
+   text-align: justify;
+}}
+
  .s-title {
    text-align: center;
    font-size: 32px;
@@ -5738,7 +5799,11 @@ table-layout: fixed;
    padding-top: 10px;
    margin-bottom: -10px;
  }
- 
+@media (max-width: 575px) {
+ .s-title {
+   font-size: 28px;
+}}
+
  .confirm-m {
    margin-bottom: 25px;
  }
@@ -5752,7 +5817,7 @@ table-layout: fixed;
 }
 
 .back-btn button {
-    padding: 15px 30px;
+    padding: 13px 30px;
     font-size: 16px;
     color: #f29600;
     border: solid 1px #f29600;
@@ -5790,6 +5855,12 @@ table-layout: fixed;
   margin-top: 15px;
   margin-bottom: 35px;
 }
+ @media (max-width: 575px) {
+.s-thanks a {
+  font-size: 14px;
+  max-width: 180px;
+}}
+
 .s-thanks a:hover {
   background: #00bde1;
   color: #fff;
@@ -5802,6 +5873,10 @@ table-layout: fixed;
     margin-bottom: 10px;
     margin-top: 30px;
 }
+@media (max-width: 575px) {
+.s-thanks h3 {
+  font-size: 16px;
+}}
 
  .comp-title {
    text-align: center;
@@ -5811,7 +5886,11 @@ table-layout: fixed;
    margin-top: -5px;
    margin-bottom: 25px;
  }
- 
+ @media (max-width: 575px) {
+ .comp-title {
+   font-size: 28px;
+}}
+
  .to-top-s a {
   width:  280px;
   margin-left: auto;
@@ -5821,7 +5900,7 @@ table-layout: fixed;
   border: solid 1px #00bde1;
   color: #00bde1;
   padding: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
   border-radius: 45px;
@@ -5830,6 +5909,18 @@ table-layout: fixed;
   letter-spacing: 0.1em;
   transition: all 0.3s ease 0s;
 }
+@media (max-width: 767px) {
+ .to-top-s a {
+   margin-bottom: 30px;
+}}
+@media (max-width: 575px) {
+ .to-top-s a {
+  font-size: 14px;
+  padding: 16px;
+  width:  240px;
+}}
+
+
 .to-top-s a:hover {
   background-color: #00bde1;
   color: #fff;

@@ -39,8 +39,8 @@ class SupportSendmail extends Mailable
     public function build()
     {
         return $this
-            ->from('yoyakuma@starting-design.com')
-            ->subject('【予約管理ならヨヤクマ】zoomサポートのご依頼、ありがとうございます。')
+            ->from('yoyakuma@starting-design.com', '【予約管理ならヨヤクマ】')  // メールの送信元（From）のメールアドレスと名前を設定
+            ->subject('zoomサポートのご依頼、ありがとうございます。')
             ->view('support.mail')
             ->with([
                 'name' => $this->name,

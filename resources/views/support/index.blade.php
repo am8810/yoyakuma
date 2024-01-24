@@ -29,8 +29,8 @@
                 <table>
                     <tr>
                         <td>※</td>
-                        <td>zoomサポートを行うには、ご使用のパソコンにzoomをインストールする必要があります。zoomのインストールは以下のボタンからデータをダウンロードして行ってください。<br>
-                        <a href="{{ asset('uploads/zoomusInstallerFull.pkg')}}" role="button">zoomダウンロード <i class="fas fa-angle-right"></i></a></td>
+                        <td>zoomサポートを行うには、ご使用のパソコンにzoomをインストールする必要があります。以下のボタンから、zoomサイトにてzoomをダウンロードしてインストールを行ってください。<br>
+                        <a href="https://zoom.us/ja/download" target="_blank" role="button">zoomサイト <i class="icon-another-window_w"></i></a></td>
                     </tr>
                     <tr>
                         <td>※</td>

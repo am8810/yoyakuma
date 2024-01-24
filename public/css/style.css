@@ -3391,6 +3391,14 @@ table-layout: fixed;
     text-decoration: none;
 }
 
+.form-p {
+  text-align: center;
+}
+@media (max-width: 575px) {
+.form-p {
+  text-align: justify;
+}}
+
 
 /* ================================================== *
  *    ページタイトル

@@ -14,7 +14,7 @@
     	</div>
     </section>
 
-    <section class="customer-container">
+    <section class="l-container">
         <div id="customer-list" class="member-top-body">
             <h1 class="mypage-title">顧客一覧</h1>
             
@@ -39,7 +39,7 @@
                                 <tbody>
                                     <tr>
                                         <td>※</td>
-                                        <td>過去の予約予定日の顧客を表示したい場合は、「過去の顧客」をチェックして<br class="hidden-past-xl">「検索」をクリックしてください。</td>
+                                        <td>過去の予約予定日の顧客を表示したい場合は、<br class="hidden-past-xl">「過去の顧客」をチェックして「検索」をクリックしてください。</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -59,9 +59,9 @@
                         <thead class="thead-light">
                             <tr>
                                 <th scope="col">予約予定日</th>
-                                <th class="reservename-m" scope="col">予約対象</th>
+                                <th scope="col">予約対象</th>
                                 <th scope="col">お名前</th>
-                                <th scope="col">お名前（フリガナ）</th>
+                                <th scope="col">フリガナ</th>
                                 <th scope="col">電話番号</th>
                                 <th scope="col">メールアドレス</th>
                             </tr>

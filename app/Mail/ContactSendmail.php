@@ -39,8 +39,8 @@ class ContactSendmail extends Mailable
     public function build()
     {
         return $this
-            ->from('yoyakuma@starting-design.com')
-            ->subject('【予約管理ならヨヤクマ】お問い合わせいただき、ありがとうございます。')
+            ->from('yoyakuma@starting-design.com', '【予約管理ならヨヤクマ】')  // メールの送信元（From）のメールアドレスと名前を設定
+            ->subject('お問い合わせいただき、ありがとうございます。')
             ->view('contact.mail')
             ->with([
                 'name' => $this->name,

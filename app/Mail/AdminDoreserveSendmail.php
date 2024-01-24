@@ -41,8 +41,8 @@ class AdminDoreserveSendmail extends Mailable
     {
         // buildメソッドはメールの内容を構築し、メールの送信に関する設定を行うためのメソッド
         return $this
-            ->from('yoyakuma@starting-design.com') // メールの送信元（From）のメールアドレスを設定
-            ->subject("「{$this->do_reserve->customer_name}」様より　予約が入りました【予約管理ならヨヤクマ】") // メールの件名
+            ->from('yoyakuma@starting-design.com', '【予約管理ならヨヤクマ】')  // メールの送信元（From）のメールアドレスと名前を設定
+            ->subject("「{$this->do_reserve->customer_name}」様より　予約が入りました") // メールの件名
             ->view('reserve.admin') // メールの内容を表示するビュー
             ->with([ // withメソッドを使用して、ビューにデータを渡す
                 'reservepage' => $this->reservepage,

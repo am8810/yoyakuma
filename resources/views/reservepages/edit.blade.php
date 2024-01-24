@@ -247,8 +247,8 @@
                   <input type="email" id="inputform_0" name="inputform[]" placeholder="○○○@△△△.com" class="form-control">
                 </div>
                 <p class="required">
-                @if ($errors->has('inputform.*'))
-                  {{$errors->first('inputform.*')}}
+                @if ($errors->has('inputform'))
+                  {{$errors->first('inputform')}}
                 @endif
                 </p>
                 <input type="button" value="追加" class="inform-btn" onclick="addForm()">

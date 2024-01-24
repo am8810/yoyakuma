@@ -31,7 +31,7 @@
               <tbody>
                 <tr>
                   <td>※</td>
-                  <td>料金についての詳細は<a href="#" target="_blank">コチラ <i class="icon-another-window_w"></i></a>をご覧ください。</td>
+                  <td>料金についての詳細は<a href="{{ url('price') }}" target="_blank">コチラ <i class="icon-another-window_w"></i></a>をご覧ください。</td>
                 </tr>
               </tbody>
             </table>
