@@ -594,7 +594,7 @@
                 name = doreserve["customer_name"] + "(" + doreserve["customer_furigana"] +")"; // 変数nameには名前（フリガナ）が入る
               }
               let price = ""; // 変数priceを宣言し、空の文字列で初期化
-              if (arg.event.extendedProps["price"] == "予約時に価格は算定されません") { // priceの値が「予約時に価格は算定されません」の場合
+              if (arg.event.extendedProps["price"] == "-1") { // priceの値が「予約時に価格は算定されません」の場合
                 price = "予約時に価格は算定されません"; // 変数priceには「予約時に価格は算定されません」が入る
               } else if (arg.event.extendedProps["price"] == "0") { // priceの値が0の場合
                 price = "無料" // 変数priceには「無料」が入る
