@@ -126,7 +126,6 @@
                 <li class="suitable">テニス教室</li>
                 <li class="suitable">レストラン</li>
                 <li class="suitable">飲食店・レストラン</li>
-                <li class="suitable">美容院</li>
                 <li class="suitable">レンタルスタジオ</li>
                 <li class="suitable">スポーツ施設</li>
                 <li class="suitable">クリニック</li>
@@ -138,8 +137,8 @@
                 <li class="suitable">ブライダルフェア</li>
                 <li class="suitable">展示会</li>
                 <li class="suitable">研修セミナー</li>
+                <li class="suitable">住宅展示場</li>
                 <li class="suitable">バーベキュー場</li>
-                <li class="suitable">面接</li>
                 <li class="suitable">観光</li>
                 <li class="suitable-nb">…etc</li>
             </ul>
@@ -148,46 +147,47 @@
         <div class="MenuCourse_type_demo">
             <div class="top-demo demo-c">
                 <h2 class="under-2">ヨヤクマの予約ページ</h2>
-                <h4 class="demopage">（デモページ）</h4>
-                <p class="demopage-p">実際にどの様な予約ページが利用可能か、<strong class="red">デモページ</strong>を見てご確認ください。</p>
+                <h4 class="demopage">（サンプル）</h4>
+                <p class="demopage-p">実際にどの様な予約ページが利用可能か、<strong class="red">サンプルページ</strong>を見てご確認ください。</p>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>※</td>
+                            <td>予約が行われる流れを理解していただくため、サンプルページから予約を行っていただくことも可能です。<br>
+                            サンプルページの予約は、実際に予約が行われる訳ではありません。</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
             
             <div class="row pad-45-m">
                 <div class="col-md-4 top-demo-b">
                     <div class="pad-45">
                         <img class="arrow" src="{{ asset('img/arrow.svg')}}" alt="矢印">
-                        <img class="img-fluid type-img" src="{{ asset('img/LessonSchool_type-02.jpg')}}" alt="英会話スクールのデモページ">
-                        <h4><span class="under">英会話スクール</span>のデモページ</h4>
-                        <a href="#" role="button">デモページ <i class="icon-another-window_w"></i></a>
+                        <img class="img-fluid type-img" src="{{ asset('img/LessonSchool_type-02.jpg')}}" alt="英会話スクールのサンプルページ">
+                        <h4><span class="under">英会話スクール</span></h4>
+                        <a href="https://yoyakuma.com/reserve/sample/4" target="_blank" role="button">サンプルページ <i class="icon-another-window_w"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="pad-45">
                         <img class="arrow-2" src="{{ asset('img/arrow.svg')}}" alt="矢印">
-                        <img class="img-fluid type-img" src="{{ asset('img/MenuCourse_type-01.jpg')}}" alt="飲食店のデモページ">
-                        <h4><span class="under">飲食店</span>のデモページ</h4>
-                        <a href="#" role="button">デモページ <i class="icon-another-window_w"></i></a>
+                        <img class="img-fluid type-img" src="{{ asset('img/MenuCourse_type-01.jpg')}}" alt="飲食店のサンプルページ">
+                        <h4><span class="under">飲食店</span></h4>
+                        <a href="https://yoyakuma.com/reserve/sample/7" target="_blank" role="button">サンプルページ <i class="icon-another-window_w"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 top-demo-g">
                     <div class="pad-45">
                         <img class="arrow-2" src="{{ asset('img/arrow.svg')}}" alt="矢印">
-                        <img class="img-fluid type-img" src="{{ asset('img/Event_type-02.jpg')}}" alt="研修セミナーのデモページ">
-                        <h4><span class="under">研修セミナー</span>のデモページ</h4>
-                        <a href="#" role="button">デモページ <i class="icon-another-window_w"></i></a>
+                        <img class="img-fluid type-img" src="{{ asset('img/Event_type-02.jpg')}}" alt="研修セミナーのサンプルページ">
+                        <h4><span class="under">研修セミナー</span></h4>
+                        <a href="https://yoyakuma.com/reserve/sample/11" target="_blank" role="button">サンプルページ <i class="icon-another-window_w"></i></a>
                     </div>
                 </div>
             </div>
-
-            <table>
-                <tbody>
-                    <tr>
-                        <td>※</td>
-                        <td>予約が行われる流れを理解していただくため、デモページから予約を行っていただくことも可能です。<br>
-                        デモページの予約は、実際に予約が行われる訳ではありません。</td>
-                    </tr>
-                </tbody>
-            </table>
 
         </div>
 

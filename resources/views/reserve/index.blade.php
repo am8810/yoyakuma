@@ -38,7 +38,7 @@
                                     <small>※ 予約時に価格は算定されません</small>
                                     @elseif($reservepage->price =='0')無料
                                     @else
-                                    {{ number_format($reservepage->price) }}<small>円（税抜）</small></h4>
+                                    {{ number_format($reservepage->price) }}<small>円（税込）</small></h4>
                                     @endif
 
                                 </div>

@@ -157,7 +157,7 @@
                     価格は現地で算定される場合は、「予約時に価格は算定されません」にチェックを入れてください。</p>
                     <table>
                         <tr>
-                            <th><input type="number" name="price" value="{{ old('price') }}" id="reservepage-price" class="form-control" placeholder="0000"></th>
+                            <th><input type="number" name="price" value="{{ old('price') }}" id="reservepage-price" class="form-control" placeholder="0000" min="0"></th>
                             <td>円（税込）</td>
                         </tr>
                     </table>

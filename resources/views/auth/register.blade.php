@@ -163,12 +163,7 @@
                 </tbody>
             </table>
 
-            <div class="consent">
-              <input type="checkbox" id="consent-chk" name="consent-chk">
-              <label for="consent-chk"><a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
-            </div>
-            
-            <button disabled class="form-btn bgleft btn" type="submit" value="アカウント作成">
+            <button class="form-btn bgleft btn" type="submit" value="アカウント作成">
                 <span>会員登録 <i class="fas fa-angle-right"></i></span>
             </button>
 
@@ -186,13 +181,10 @@
         </div>
         
         <div class="explain">
-            <p>入力いただきましたお客様の個人情報は、ヨヤクマの情報提供の目的で利用します。<br>
-            また、お客様の入力された内容は適切に管理します。<br>
-            情報の開示・訂正・追加・削除を希望されるお客様は、下記の連絡先までお問い合わせください。<br>
-            【ヨヤクマ管理者】<br>
-            メール：yoyakuma-admin@starting-design.com<br>
-            電話：080-5161-5304<br>
-            お客様がご自身の個人情報を入力・送信された場合、上記利用目的にご同意いただけたものとします。</p>
+            <p>入力いただきました個人情報は、ヨヤクマの情報提供の目的で利用し、個人情報の取り扱いに沿って適切に管理いたします。個人情報を入力・送信された場合、<a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取り扱い<i class="fas fa-external-link-alt"></i></a>にご同意いただけたものとします。<br>
+            情報の開示・訂正・削除を希望される方は、下記の連絡先までお問い合わせください。<br>
+            【ヨヤクマ運営元】スターティングデザイン<br>
+            yoyakuma@starting-design.com</p>
         </div>
                 
     </section>

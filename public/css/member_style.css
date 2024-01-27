@@ -3387,10 +3387,10 @@ label {
 }}
 
 .update {
-  max-width: 321px;
+  max-width: 441px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: -20px;
 }
 @media (max-width: 575px) {
@@ -3402,13 +3402,14 @@ label {
 .update td {
   font-size: 12px;
   color: #666666;
+  padding-bottom: 5px;
 }
 
 .private-note-t {
   max-width: 441px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: -20px;
 }
 @media (max-width: 575px) {
@@ -3420,6 +3421,7 @@ label {
 .private-note-t td {
   font-size: 12px;
   color: #666666;
+  padding-bottom: 5px;
 }
 
 .about-private td {

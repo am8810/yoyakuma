@@ -4104,6 +4104,16 @@ table-layout: fixed;
     font-size: 14px;
 }
 
+.explain a {
+  color: #f29600;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+
+.explain a:hover {
+  color: #f6b54c;
+}
+
 .form-control.is-invalid {
   border-color: #ff0000;
 }
@@ -4990,26 +5000,20 @@ table-layout: fixed;
 }}
 
 .MenuCourse_type_demo table {
-  max-width: 730px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top:  -5px;
+  margin-bottom: 15px;
 }
-@media (max-width: 575px) {
-.MenuCourse_type_demo table {
-  margin-top: 25px;
-}}
 
 .LessonSchool_type_demo table {
-  max-width: 730px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top:  -5px;
+  margin-bottom: 15px;
 }
-@media (max-width: 575px) {
-.LessonSchool_type_demo table {
-  margin-top: 25px;
-}}
 
 .Event_type_demo table {
   max-width: 730px;

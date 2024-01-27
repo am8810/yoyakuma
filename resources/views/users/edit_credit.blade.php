@@ -64,7 +64,7 @@
 <script type="application/javascript"> 
     const stripe = Stripe('pk_test_51O8KJ7LtSGE4625lIVM18riDD7rpE6TfRiTOJPXZ1rtum5qsFON8QxEKgjkajDoQNW16yyPgGAfhZYzqgtcZj3J300pALp3NSb');
     const elements = stripe.elements();
-    const cardElement = elements.create('card', {hidePostalCode: true);
+    const cardElement = elements.create('card', {hidePostalCode: true});
     cardElement.mount('#card-element');
     
     const cardHolderName = document.getElementById('card-holder-name');

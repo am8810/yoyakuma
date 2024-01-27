@@ -40,7 +40,7 @@
     
     <div class="top-info">
         <h3>お問い合わせ先</h3>
-        <p>【予約管理ならヨヤクマ】<br>
+        <p>【ヨヤクマ運営元】スターティングデザイン<br>
         担当者：天野<br>
         メールアドレス：yoyakuma@starting-design.com<br>
         電話番号：080-5161-5304</p>

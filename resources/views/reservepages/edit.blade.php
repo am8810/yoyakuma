@@ -178,11 +178,11 @@
                 <table>
                     <tr>
                         @if($reservepage->price != -1)
-                        <th><input type="number" name="price" id="reservepage-price" class="form-control" value="{{ $reservepage->price }}" placeholder="0000"></th>
+                        <th><input type="number" name="price" id="reservepage-price" class="form-control" value="{{ $reservepage->price }}" placeholder="0000" min="0"></th>
                         <td>円（税込）</td>
                         @endif
                         @if($reservepage->price == -1)
-                        <th><input type="number" name="price" id="reservepage-price" class="form-control" value="" placeholder="0000"></th>
+                        <th><input type="number" name="price" id="reservepage-price" class="form-control" value="" placeholder="0000" min="0"></th>
                         <td>円（税込）</td>
                         @endif
                     </tr>
