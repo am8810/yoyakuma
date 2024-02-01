@@ -65,17 +65,15 @@
           <input id="card-holder-name" type="text" placeholder="カード名義人">
         　<div id="card-element"></div>
         　
-          <button id="card-button" data-secret="{{ $intent->client_secret }}" class="form-btn bgleft btn">
+　        <div class="consent">
+            <input type="checkbox" id="memberform-click" name="memberform-click">
+            <label for="memberform-click"><a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
+          </div>
+          
+          <button id="card-button" data-secret="{{ $intent->client_secret }}" disabled class="form-btn bgleft btn">
             <span>有料会員登録 <i class="fas fa-angle-right"></i></span>
           </button>
        </form>
-       
-       <div class="explain">
-            <p>入力いただきましたクレジットカード情報は、ヨヤクマの情報提供の目的で利用し、個人情報の取り扱いに沿って適切に管理いたします。個人情報を入力・送信された場合、<a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取り扱い<i class="fas fa-external-link-alt"></i></a>にご同意いただけたものとします。<br>
-            情報の開示・訂正・削除を希望される方は、下記の連絡先までお問い合わせください。<br>
-            【ヨヤクマ運営元】スターティングデザイン<br>
-            yoyakuma@starting-design.com</p>
-        </div>
        
        @else
         <img src="{{ asset('img/registered.svg')}}" alt="有料会員登録がされています。" class="registered">
@@ -227,6 +225,14 @@ function animationStart() {
 // window.setTimeout( animation, 2000 );
 </script>
 
+<script>
+    const member_consent_chk = document.querySelector(`#memberform-click`);
+    const card_btn = document.querySelector(`#card-button`);
+
+    member_consent_chk.addEventListener('change', () => {
+        card_btn.disabled = !member_consent_chk.checked;
+    });
+</script>
 
 @endpush
 @endsection

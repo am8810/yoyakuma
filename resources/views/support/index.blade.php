@@ -22,7 +22,7 @@
             
             <img class="zoom_illust" src="{{ asset('img/zoom_illust.svg')}}" alt="zoomサポート イラスト">
 
-            <p>「予約ページをどうやって作成・編集すればいいか分からない」「予約状況や顧客情報の確認方法が分からない」「メールアドレスやパスワードの変更方法が分からない」といったお困りごとがありましたら、zoomによって画面共有をしていただき操作サポートをいたします。<br>
+            <p>「予約ページをどうやって作成・編集すればいいか分からない」「どのように予約ページを運用すればいいか分からない」といったお困りごとがありましたら、zoomによって画面共有をしていただき操作サポートをいたします。<br>
             zoomサポートを行う上で、以下の注意事項がございますのでご確認ください。</p>
             
             <div class="s-form-note">
@@ -127,22 +127,35 @@
                     @endif
                 </div>
                 
-                <button class="form-btn bgleft btn" type="submit" value="送信内容を確認">
+                <div class="consent support-check">
+                  <input type="checkbox" id="consent-chk" name="consent-chk">
+                  <label for="consent-chk"><a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
+                </div>
+                
+                <button disabled class="form-btn bgleft btn" type="submit" value="送信内容を確認">
                     <span>送信内容を確認 <i class="fas fa-angle-right"></i></span>
                 </button>
-
+                
             </form>
             
-            <div class="explain">
-                <p>入力いただきました個人情報は、ヨヤクマの情報提供の目的で利用し、個人情報の取り扱いに沿って適切に管理いたします。個人情報を入力・送信された場合、<a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取り扱い<i class="fas fa-external-link-alt"></i></a>にご同意いただけたものとします。<br>
-                情報の開示・訂正・削除を希望される方は、下記の連絡先までお問い合わせください。<br>
-                【ヨヤクマ運営元】スターティングデザイン<br>
-                yoyakuma@starting-design.com</p>
-            </div>
-
         </div>
     </section>
 </div>
+
+<script>
+    const consent_chk = document.querySelector(`#consent-chk`);
+    const submit_btn = document.querySelector(`button[type=submit]`);
+    
+    consent_chk.addEventListener('change', () => {
+      
+      if (consent_chk.checked === true) {
+        submit_btn.disabled = false;
+      } else {
+        submit_btn.disabled = true;
+      }
+    
+    });
+</script>
 
 @endsection
 

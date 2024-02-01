@@ -50,7 +50,7 @@
                     <div class="col-sm-9 d-flex align-items-center ml-2 mt-3 member-conts">
                         <div class="d-flex flex-column">
                             <label for="user-name"><a href="{{route('mypage.membership')}}">有料会員登録</a></label>
-                            <p>有料会員登録を行うことで、予約ページが公開状態になります。<br>※無料会員のままでは、予約ページは非公開状態になります。</p>
+                            <p>有料会員登録を行うことで、予約ページを公開状態にできます。<br>※無料会員のままでは、予約ページは非公開状態になります。</p>
                         </div>
                     </div>
                 </div>

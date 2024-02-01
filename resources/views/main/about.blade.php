@@ -48,7 +48,7 @@
                             <h4 class="box box-none">01</h4>
                             <h3 class="box">ホームページやSNS等と連携して、<br class="display-lg">インターネット上で予約が可能に！</h3>
                         </div>
-                        <p>ヨヤクマの予約ページのURLをホームページやSNS等にリンク、またはQRコードでチラシ等に載せることで、インターネット上で予約が可能になります。<br>
+                        <p>ヨヤクマの予約ページURLをホームページやSNS等にリンク、またはQRコードでチラシ等に載せることで、インターネット上で予約が可能になります。<br>
                         もう紙面で予約管理をする必要がなくなり、管理画面で予約状況や顧客情報の確認ができ、予約人数の変更やキャンセル処理も行えます。<br>
                         予約ページURLのリンク方法については<a href="{{ url('performance/operation#link') }}">コチラ</a>をご覧ください。</p>
                     </div>
@@ -123,7 +123,7 @@
                             <h4 class="box box-none">04</h4>
                             <h3 class="box client">顧客情報の管理・検索も行えます！</h3>
                         </div>
-                        <p>ヨヤクマの予約ページから予約をされた方の顧客情報は、管理画面にて一覧で確認することができ、キーワード検索によって検索することもできます。<br>
+                        <p>ヨヤクマの予約ページから予約をされた方の顧客情報は、管理画面にて一覧で確認することができ、キーワード検索をすることもできます。<br>
                         顧客情報が常にまとまっていることで、安心して予約ページの運用が行えます。<br>
                         詳しくは<a href="{{ url('performance/operation#customer') }}">コチラ</a>をご覧ください。</p>
                     </div>
@@ -298,32 +298,21 @@
         <div class="MenuCourse_type_2">
             <h3>「お店・施設」タイプに適している業種や用途</h3>
             <ul class="suitable_box">
-                <li class="suitable">レストラン</li>
-                <li class="suitable">飲食店</li>
-                <li class="suitable">美容院</li>
-                <li class="suitable">理髪店</li>
-                <li class="suitable">ネイルサロン</li>
-                <li class="suitable">エステサロン</li>
-                <li class="suitable">レンタルスタジオ</li>
-                <li class="suitable">レンタルスペース</li>
-                <li class="suitable">写真スタジオ</li>
+                <li class="suitable">飲食店・レストラン</li>
                 <li class="suitable">スポーツ施設</li>
-                <li class="suitable">体育館</li>
-                <li class="suitable">運動場</li>
-                <li class="suitable">病院</li>
-                <li class="suitable">クリニック</li>
+                <li class="suitable">レンタルスペース</li>
+                <li class="suitable">施設見学</li>
+                <li class="suitable">サウナ</li>
                 <li class="suitable">接骨院・整体</li>
                 <li class="suitable">鍼灸院</li>
-                <li class="suitable">健康診断</li>
-                <li class="suitable">予防接種</li>
+                <li class="suitable">写真スタジオ</li>
                 <li class="suitable">カウンセリング</li>
                 <li class="suitable">コーチング</li>
                 <li class="suitable">結婚式場</li>
                 <li class="suitable">果物狩り</li>
                 <li class="suitable">バーベキュー場</li>
-                <li class="suitable">サウナ</li>
-                <li class="suitable">施設見学</li>
-                <li class="suitable">弁護士</li>
+                <li class="suitable">美容院・理髪店</li>
+                <li class="suitable">ネイルサロン</li>
                 <li class="suitable">税理士</li>
                 <li class="suitable-nb">…etc</li>
             </ul>
@@ -384,18 +373,19 @@
             <h3>「イベント」タイプに適している業種や用途</h3>
             <ul class="suitable_box">
                 <li class="suitable">イベント開催</li>
-                <li class="suitable">ワークショップ</li>
                 <li class="suitable">展示会</li>
                 <li class="suitable">展覧会</li>
-                <li class="suitable">ライブ</li>
-                <li class="suitable">ブライダルフェア</li>
+                <li class="suitable">住宅展示場</li>
                 <li class="suitable">研修セミナー</li>
                 <li class="suitable">説明会</li>
-                <li class="suitable">住宅展示場</li>
+                <li class="suitable">ブライダルフェア</li>
+                <li class="suitable">健康診断</li>
+                <li class="suitable">予防接種</li>
+                <li class="suitable">ワークショップ</li>
+                <li class="suitable">ライブ</li>
                 <li class="suitable">撮影会</li>
                 <li class="suitable">交流会</li>
                 <li class="suitable">観光</li>
-                <li class="suitable">ツアー</li>
                 <li class="suitable-nb">…etc</li>
             </ul>
         </div>    

@@ -27,6 +27,9 @@
     <!-- グローバルナビ -->
     <script src="{{ secure_asset('js/g-nav.js') }}" defer></script>
     
+    <!-- Form Scripts -->
+    <script src="{{ secure_asset('js/form-click.js') }}" defer></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

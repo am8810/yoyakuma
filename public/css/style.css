@@ -3067,7 +3067,48 @@ label {
   margin-bottom: 30px;
 }
 
+.contact-tel {
+  padding-bottom: 70px;
+  padding-top: 60px;
+}
+
+.contact-tel h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f29600;
+  border-top: solid 1px #f29600;
+  border-bottom: solid 1px #f29600;
+  max-width: 360px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+.contact-tel img {
+  max-width: 300px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.contact-tel img:hover {
+  opacity: 0.7;
+}
   
+.contact-tel p {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.contact-tel table {
+  margin-right: auto;
+  margin-left: auto;
+}
   /*
 ----------------------
 レスポンシブするテーブル
@@ -3351,6 +3392,7 @@ table-layout: fixed;
 .top-info {
   border-top: dotted 1px #f7c066;
   margin-top: 30px;
+  padding-bottom: 100px;
 }
 
 .top-info h3 {
@@ -3364,12 +3406,12 @@ table-layout: fixed;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    background-color: #f29600;
+    border: solid 1px #f29600;
     padding: 20px;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
+    color: #f29600;
     display: block;
     margin-top: 35px;
     margin-bottom: 0px;
@@ -3378,8 +3420,9 @@ table-layout: fixed;
 }
 
 .top-info a:hover {
-    background-color: #f7c066;
+    background-color: #f29600;
     text-decoration: none;
+    color: #fff;
 }
 .top-info a:link {
     text-decoration: none;
@@ -4120,12 +4163,13 @@ table-layout: fixed;
 
 .tentative {
   margin-top: -5px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
 
 .tentative td {
   color: #f29600;
   font-weight: 400;
+  letter-spacing: 0.082em;
 }
 
 /* ================================================== *
@@ -5016,11 +5060,12 @@ table-layout: fixed;
 }
 
 .Event_type_demo table {
-  max-width: 730px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-}
+  margin-top: -5px;
+  margin-bottom: 15px;
+}}
 @media (max-width: 575px) {
 .Event_type_demo table {
   margin-top: 25px;
@@ -5708,6 +5753,17 @@ table-layout: fixed;
 .repetition {
   margin-bottom: -5px;
 }}
+
+.repetition a {
+  color: #f29600;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+
+.repetition a:hover {
+  color: #f6b54c;
+  text-decoration: none;
+}
 
 .comp-a {
   margin-top: 45px;

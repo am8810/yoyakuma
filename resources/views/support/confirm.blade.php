@@ -102,13 +102,6 @@
 
             </form>
             
-            <div class="explain">
-                <p>入力いただきました個人情報は、ヨヤクマの情報提供の目的で利用し、個人情報の取り扱いに沿って適切に管理いたします。個人情報を入力・送信された場合、<a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取り扱い<i class="fas fa-external-link-alt"></i></a>にご同意いただけたものとします。<br>
-                情報の開示・訂正・削除を希望される方は、下記の連絡先までお問い合わせください。<br>
-                【ヨヤクマ運営元】スターティングデザイン<br>
-                yoyakuma@starting-design.com</p>
-            </div>
-
         </div>
     </section>
 </div>

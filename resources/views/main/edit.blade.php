@@ -137,7 +137,7 @@
 
                     <div class="row setting">
                         <div class="col-sm-6">
-                            <img class="img-fluid capture" src="{{ asset('img/create-image-06.jpg')}}" alt="日程・定員数　設定4">
+                            <img class="img-fluid capture" src="{{ asset('img/edit-image-13.jpg')}}" alt="日程・定員数　設定4">
                         </div>
                         <div class="col-sm-6">
                             <p>カレンダーに設定した日時が反映され、色が付きます。<br>
@@ -234,7 +234,7 @@
                             <img class="img-fluid capture" src="{{ asset('img/edit-image-10.jpg')}}" alt="❶ 作成した予約ページ一覧の表示方法-2">
                         </div>
                         <div class="col-sm-6">
-                            <p>「予約ページ表示 <i class="icon-another-window_black"></i>」をクリックすると、作成した予約ページが一覧で表示されます。</p>
+                            <p>作成した予約ページが一覧で表示されます。</p>
                         </div>
                     </div>
                     
@@ -254,6 +254,10 @@
                                       <tr>
                                           <td>※</td>
                                           <td>一度削除すると、復旧はできません。</td>
+                                      </tr>
+                                      <tr>
+                                          <td>※</td>
+                                          <td>予約ページを削除した場合、予約情報、顧客情報も全て削除されます。</td>
                                       </tr>
                                   </tbody>
                                 </table>
@@ -286,11 +290,11 @@
                                   <tbody>
                                       <tr>
                                           <td>※</td>
-                                          <td>公開か非公開の設定は「基本情報」にて行ってください。</td>
+                                          <td>公開状態は誰にでも閲覧可能な状態となり、非公開状態はログイン状態の管理者のみが閲覧可能で、一般ユーザーからは閲覧不可能となります。</td>
                                       </tr>
                                       <tr>
                                           <td>※</td>
-                                          <td>公開状態は誰にでも閲覧可能な状態となり、非公開状態はログイン状態の管理者のみが閲覧可能で、その他の人からは閲覧不可能となります。</td>
+                                          <td>予約ページを公開状態にするには有料会員登録が必要です。詳しくは<a href="{{ url('/') }}/price#paid">コチラ</a>をご覧ください。</td>
                                       </tr>
                                   </tbody>
                                 </table>

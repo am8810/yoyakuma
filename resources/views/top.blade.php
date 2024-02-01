@@ -124,21 +124,21 @@
                 <li class="suitable">料理教室</li>
                 <li class="suitable">サッカー教室</li>
                 <li class="suitable">テニス教室</li>
-                <li class="suitable">レストラン</li>
                 <li class="suitable">飲食店・レストラン</li>
-                <li class="suitable">レンタルスタジオ</li>
                 <li class="suitable">スポーツ施設</li>
-                <li class="suitable">クリニック</li>
+                <li class="suitable">レンタルスタジオ</li>
                 <li class="suitable">バーベキュー場</li>
                 <li class="suitable">施設見学</li>
                 <li class="suitable">サウナ</li>
-                <li class="suitable">弁護士</li>
+                <li class="suitable">接骨院・整体</li>
+                <li class="suitable">税理士</li>
                 <li class="suitable">イベント開催</li>
-                <li class="suitable">ブライダルフェア</li>
                 <li class="suitable">展示会</li>
-                <li class="suitable">研修セミナー</li>
                 <li class="suitable">住宅展示場</li>
-                <li class="suitable">バーベキュー場</li>
+                <li class="suitable">研修セミナー</li>
+                <li class="suitable">説明会</li>
+                <li class="suitable">ブライダルフェア</li>
+                <li class="suitable">ワークショップ</li>
                 <li class="suitable">観光</li>
                 <li class="suitable-nb">…etc</li>
             </ul>
@@ -218,7 +218,7 @@
                     <img src="{{ asset('img/cando-2.svg')}}" class="cando-img" alt="ご自身で予約ページを作成・編集">
                     <h4>02</h4>
                     <h3 class="cando-2">ご自身で予約ページを<br class="display-m">作成・編集</h3>
-                    <p>ご自身で予約ページの作成・編集が可能で、カレンダーを直接クリックして日程や定員数の設定が行えるようになっています。</p>
+                    <p>ご自身で予約ページの作成・編集が可能で、カレンダーを直接クリックして日程や定員数の設定が行えます。</p>
                 </div>
             </article>
 
@@ -247,7 +247,7 @@
                     <img src="{{ asset('img/cando-5.svg')}}" class="cando-img" alt="顧客情報の管理">
                     <h4>05</h4>
                     <h3 class="cando-5">顧客情報の管理</h3>
-                    <p>顧客一覧ページも設けられており、顧客のお名前、電話番号、メールアドレス等も管理されています。キーワード検索により顧客を検索することもできます。</p>
+                    <p>顧客のお名前、電話番号、メールアドレス等も管理されています。キーワード検索により顧客を検索することもできます。</p>
                 </div>
             </article>
 
@@ -283,7 +283,7 @@
                             <img class="img-fluid box none-box" src="{{ asset('img/performance-o.svg')}}" alt="歯車（オレンジ）">
                             <h3 class="box none-box">予約ページの作成</h3>
                         </div>
-                        <p>予約ページ作成は、どなたでも簡単に設定が行えるよう項目を見やすくし、カレンダーを直接クリックして行う仕様となっております。</p>
+                        <p>予約ページ作成は、どなたでも簡単に設定が行えるよう項目を見やすくし、カレンダーを直接クリックして行う仕様となっています。</p>
                         
                         <div class="o-center">
                             <a href="{{ url('performance/create') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
@@ -319,7 +319,7 @@
                             <img class="img-fluid box none-box" src="{{ asset('img/performance-b.svg')}}" alt="歯車（ブルー）">
                             <h3 class="box none-box">作成される予約ページ</h3>
                         </div>
-                        <p>作成される予約ページが、どのようなデザインで、設定した内容がどのように反映されるかをご説明します。どのように予約が行われるかの流れも、ご理解いただければと思います。</p>
+                        <p>作成される予約ページが、どのようなデザインで、設定した内容がどのように反映されるかをご説明します。予約が行われる流れもご理解いただければと思います。</p>
                         
                         <div class="b-center">
                             <a href="{{ url('performance/createpage') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
@@ -336,7 +336,7 @@
                             <img class="img-fluid box none-box" src="{{ asset('img/performance-b.svg')}}" alt="歯車（ブルー）">
                             <h3 class="box none-box">予約ページの運用</h3>
                         </div>
-                        <p>予約がされたらどうお知らせするのか、予約状況はどう確認するのか、予約人数の変更やキャンセルの対応はどう行うのかといった具体的な運用方法になります。</p>
+                        <p>予約がされたらどうお知らせするのか、予約状況はどう確認するのか、予約人数の変更やキャンセルの対応はどう行うのかといった具体的な運用方法をご説明します。</p>
                         
                         <div class="b-center">
                             <a href="{{ url('performance/operation') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
@@ -401,7 +401,7 @@
                     <p>有料会員としてのヨヤクマの料金プランは、月額2,980円（税抜）の1プランのみとなっております。月額2,980円で予約ページを何ページでも作成することができ、予約可能人数の制限もなく、予約された際の手数料も一切かかりません。<br>
                     また、予約ページに広告表示も一切されることはありません。他社の予約管理システムと比べても、非常に低コストで運用が可能です。</p>
                     <h4>有料会員登録の方法</h4>
-                    <p>ヨヤクマをご利用いただくには、まず<a href="{{ route('register') }}">新規会員登録</a>をしていただき、管理画面の基本情報から有料会員登録を行ってください。詳しくは<a href="{{ url('/') }}/price#paid">コチラ</a>をご覧ください。</p>
+                    <p>有料会員登録は、まず<a href="{{ route('register') }}">新規会員登録</a>をしていただき、管理画面の基本情報から有料会員登録を行ってください。詳しくは<a href="{{ url('/') }}/price#paid">コチラ</a>をご覧ください。</p>
                 </div>
             </div>
         </div>

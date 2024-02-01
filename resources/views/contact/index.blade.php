@@ -88,17 +88,29 @@
             </tbody>
         </table>
         
-        <button class="form-btn bgleft btn" type="submit" value="送信内容を確認">
+        <div class="consent contact-check">
+          <input type="checkbox" id="consent-chk" name="consent-chk">
+          <label for="consent-chk"><a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
+        </div>
+        
+        <button disabled class="form-btn bgleft btn" type="submit" value="送信内容を確認">
             <span>送信内容を確認 <i class="fas fa-angle-right"></i></span>
         </button>
-
+        
     </form>
     
-    <div class="explain">
-        <p>入力いただきました個人情報は、ヨヤクマの情報提供の目的で利用し、個人情報の取り扱いに沿って適切に管理いたします。個人情報を入力・送信された場合、<a href="{{ url('privacy') }}" target="_blank">個人情報の取り扱い<i class="fas fa-external-link-alt"></i></a>にご同意いただけたものとします。<br>
-        情報の開示・訂正・削除を希望される方は、下記の連絡先までお問い合わせください。<br>
-        【ヨヤクマ運営元】スターティングデザイン<br>
-        yoyakuma@starting-design.com</p>
+    <div class="contact-tel">
+        <h4>お電話でのお問い合わせ・サポート</h4>
+        <a href="tel:08051615304"><img src="{{ asset('img/telephone-number.svg')}}" alt="電話番号"></a>
+        <p>受付時間／10：00〜18：00（土・日・祝 休み）</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>※</td>
+                    <td>通話料が発生いたします。</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </section>

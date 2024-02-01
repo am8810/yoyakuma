@@ -6,7 +6,7 @@
         <img src="{{ asset('img/logomark.svg')}}" class="membertop-logo" alt="予約管理ならヨヤクマ">
         
         <p class="member-top-p">予約ページを新規作成する場合は<span class="text-orange">『予約ページを作成』</span>をクリック、<br class="hidden-xs">
-        既にある予約ページを編集する場合は<span class="text-blue">『予約ページを編集』</span>をクリックして下さい。</p>
+        既にある予約ページを編集する場合は<span class="text-blue">『予約ページを編集』</span>をクリックしてください。</p>
     
         <div class="wrap top-btn">
             <div class="item btn-orange">

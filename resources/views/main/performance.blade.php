@@ -42,7 +42,7 @@
                         <img class="img-fluid box none-box" src="{{ asset('img/performance-o.svg')}}" alt="歯車（オレンジ）">
                         <h2 class="box none-box">予約ページの作成</h2>
                     </div>
-                    <p>ヨヤクマの予約ページが、どのように作成されるかをご説明します。予約ページ作成は、どなたでも簡単に設定が行えるよう項目を見やすくし、カレンダーを直接クリックして行う仕様となっております。</p>
+                    <p>予約ページ作成は、どなたでも簡単に設定が行えるよう項目を見やすくし、カレンダーを直接クリックして行う仕様となっています。</p>
                     <div class="per-orange-btn">
                         <a href="{{ url('performance/create') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
                     </div>
@@ -74,7 +74,7 @@
                         <img class="img-fluid box none-box" src="{{ asset('img/performance-b.svg')}}" alt="歯車（ブルー）">
                         <h2 class="box none-box">作成される予約ページ</h2>
                     </div>
-                    <p>作成される予約ページが、どのようなデザインで、設定した内容がどのように反映されるかをご説明します。どのように予約が行われるかの流れも、ご理解いただければと思います。</p>
+                    <p>作成される予約ページが、どのようなデザインで、設定した内容がどのように反映されるかをご説明します。予約が行われる流れもご理解いただければと思います。</p>
                     <div class="per-blue-btn">
                         <a href="{{ url('performance/createpage') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
                     </div>
@@ -90,8 +90,7 @@
                         <img class="img-fluid box none-box" src="{{ asset('img/performance-b.svg')}}" alt="歯車（ブルー）">
                         <h2 class="box none-box">予約ページの運用</h2>
                     </div>
-                    <p>作成した予約ページを、どのように運用していくかをご説明します。<br>
-                    予約がされたらどうお知らせするのか、予約状況はどう確認するのか、予約人数の変更やキャンセルの対応はどう行うのかといった具体的な運用方法になります。</p>
+                    <p>予約がされたらどうお知らせするのか、予約状況はどう確認するのか、予約人数の変更やキャンセルの対応はどう行うのかといった具体的な運用方法をご説明します。</p>
                     <div class="per-blue-btn">
                         <a href="{{ url('performance/operation') }}" role="button">詳しくはコチラ <i class="fas fa-angle-right"></i></a>
                     </div>
