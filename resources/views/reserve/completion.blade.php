@@ -7,7 +7,8 @@
 <div class="r-page-body">
     <div class="reserve-form">
     	<div class="reservestep">
-    	    <img src="{{ asset('img/reservestep-4.svg')}}" class="img-fluid" alt="予約完了">
+    	    <img src="{{ asset('img/reservestep-4.svg')}}" class="img-fluid d-none d-sm-block" alt="予約完了">
+    	    <img src="{{ asset('img/reservestep-4-s.svg')}}" class="img-fluid d-block d-sm-none" alt="予約完了">
     	</div>
 
     	<div class="completion">

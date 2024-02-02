@@ -1,8 +1,8 @@
 @extends('layouts.member_app')
 
 @section('content')
-<div class="member-body">
-    <div class="container member-top-body m-t-b">
+<div class="member-body home-mobile">
+    <div class="container member-top-body m-t-b home-mobile-none">
         <img src="{{ asset('img/logomark.svg')}}" class="membertop-logo" alt="予約管理ならヨヤクマ">
         
         <p class="member-top-p">予約ページを新規作成する場合は<span class="text-orange">『予約ページを作成』</span>をクリック、<br class="hidden-xs">

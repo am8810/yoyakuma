@@ -16,9 +16,10 @@
     	</div>
     </div>
     
-    <div class="s-container member-top-body user-page-icon">
+    <div class="s-container user-page-icon">
+      <div class="member-top-body">
         <img src="{{ asset('img/user-icon-3.jpg')}}" alt="有料会員登録">
-        <h1 class="mypage-title">カード情報の変更</h1>
+        <h1 class="mypage-title change-m">カード情報の変更</h1>
         
         <div class="membership-p">
             <p>以下に変更するクレジットカード情報を入力していただき、「カード情報の変更」をクリックしてください。</p>
@@ -47,18 +48,18 @@
         </div>
         
 
-       <form id="setup-form" action="{{ route('mypage.update_credit') }}" method="post">
-        @csrf
-          <input id="card-holder-name" type="text" placeholder="カード名義人">
-        　<div id="card-element"></div>
-        　
-          <button id="card-button" data-secret="{{ $intent->client_secret }}" class="form-btn bgleft btn card-change">
-            <span>カード情報の変更 <i class="fas fa-angle-right"></i></span>
-          </button>
-       </form>
-
+         <form id="setup-form" action="{{ route('mypage.update_credit') }}" method="post">
+          @csrf
+            <input id="card-holder-name" type="text" placeholder="カード名義人">
+          　<div id="card-element"></div>
+          　
+            <button id="card-button" data-secret="{{ $intent->client_secret }}" class="form-btn bgleft btn card-change">
+              <span>カード情報の変更 <i class="fas fa-angle-right"></i></span>
+            </button>
+         </form>
+      </div>
     </div>
-</div>
+  </div>
 @push('scripts')
 <script src="https://js.stripe.com/v3/"></script>
 <script type="application/javascript"> 

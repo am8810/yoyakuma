@@ -176,7 +176,7 @@
                             <img class="img-fluid" src="{{ asset('img/create-image-04.jpg')}}" alt="日程・定員数　設定2">
                         </div>
                         <div class="col-sm-6">
-                            <p>日時・定員数の選択画面が表示されます。<br>
+                            <p class="pa-adjustment-1">日時・定員数の選択画面が表示されます。<br>
                             日にちと時間は、カレンダーをクリックした日時が設定されており、手動で変更することもできます。<br>
                             この日時に予約可能な人数を定員数として入力してください。</p>
                         </div>

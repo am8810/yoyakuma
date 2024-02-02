@@ -50,12 +50,7 @@
                         <th><span class="title-contactform7">メールアドレス</span></th>
                         <td class="regi-mail">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror samazon-login-input" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="メールアドレスを入力してください">
-                            <table class="register-ta">
-                                <tr>
-                                    <td>※</td>
-                                    <td>アカウント作成後の変更はできません。</td>
-                                </tr>
-                            </table>
+                            <span class="register-ta">※アカウント作成後の変更はできません。</span>
                             @if ($errors->has('email'))
                               @foreach($errors->get('email') as $message)
                               <span><strong>{{ $message }}</strong></span>
@@ -86,16 +81,9 @@
                         <td class="page_address">
                             https://yoyakuma.com/reserve/
                             <input type="text" class="form-control @error('page_address') is-invalid @enderror samazon-login-input" name="page_address" required placeholder="3文字以上の半角英数字">
-                            <table class="register-ta">
-                                <tr class="register-bl">
-                                    <td>※</td>
-                                    <td>予約ページはヨヤクマサイト（https://yoyakuma.com）内に含まれる形で作成されます。</td>
-                                </tr>
-                                <tr>
-                                    <td>※</td>
-                                    <td>アカウント作成後の変更はできません。</td>
-                                </tr>
-                            </table>
+                            ※予約ページはヨヤクマサイト（https://yoyakuma.com）内に含まれる形で作成されます。<br>
+                            <span class="register-ta">※アカウント作成後の変更はできません。</span>
+                            
                             @if ($errors->has('page_address'))
                               @foreach($errors->get('page_address') as $message)
                               <span><strong>{{ $message }}</strong></span>
@@ -163,7 +151,7 @@
                 </tbody>
             </table>
             
-            <div class="consent">
+            <div class="consent register-check">
               <input type="checkbox" id="consent-chk" name="consent-chk">
               <label for="consent-chk"><a href="{{ url('terms') }}" target="_blank">利用規約<i class="fas fa-external-link-alt"></i></a>と<a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
             </div>

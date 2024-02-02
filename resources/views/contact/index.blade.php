@@ -92,7 +92,7 @@
           <input type="checkbox" id="consent-chk" name="consent-chk">
           <label for="consent-chk"><a href="{{ url('privacy') }}" target="_blank">個人情報の取扱い<i class="fas fa-external-link-alt"></i></a>に同意します。</label>
         </div>
-        
+
         <button disabled class="form-btn bgleft btn" type="submit" value="送信内容を確認">
             <span>送信内容を確認 <i class="fas fa-angle-right"></i></span>
         </button>

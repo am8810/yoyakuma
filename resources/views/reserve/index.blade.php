@@ -17,7 +17,7 @@
                     <div class="r-list-m">
                         <a href="/reserve/{{ $page_address }}/{{ $reservepage->id }}">
                             <div class="row">
-                                <div class="col-sm-4 r-list-img">
+                                <div class="col-lg-4 r-list-img">
                                 @if ($reservepage->image)
                                 <img src="{{ asset('storage/reservepages/'.$reservepage->image) }}" id="reservepage-image-preview" class="img-fluid">
                                 @else
@@ -25,7 +25,7 @@
                                 @endif
                                 </div>
                                 
-                                <div class="col-sm-8 r-list-p">
+                                <div class="col-lg-8 r-list-p">
                                     <h3>{{ $reservepage->name }}</h3>
                                     <p>
                                         <?php

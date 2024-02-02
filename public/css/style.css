@@ -591,6 +591,10 @@ label {
 	.header-menu {
    padding: 32.5px 18px;
 		}}
+  @media (max-width: 1224px) {
+	.header-menu {
+   padding: 32.5px 17px;
+		}}
   @media (max-width: 1220px) {
 	.header-menu {
    padding: 32.5px 16px;
@@ -2257,7 +2261,7 @@ label {
     display: block;
     max-width: 250px;
     height: 60px;
-    line-height: 58px;
+    line-height: 57px;
     padding: 0 20px;
     font-size: 16px;
     color: #f29600;
@@ -2698,17 +2702,17 @@ label {
     font-size: 24px;
     background: none;
     letter-spacing: 0.1em;
-    padding: 29px 10px 33.5px;
+    padding: 24.5px 10px 33.5px;
 }
 @media (max-width: 575px) {
   #to-register a {
       font-size: 20px;
-      padding: 28.5px 10px 30px;
+      padding: 25.5px 10px 30px;
 }}
 @media (max-width: 350px) {
   #to-register a {
       font-size: 18px;
-      padding: 23px 10px 25px;
+      padding: 21px 10px 25px;
 }}
 
 #to-register a:hover {
@@ -3071,6 +3075,11 @@ label {
   padding-bottom: 70px;
   padding-top: 60px;
 }
+@media (max-width: 575px) {
+.contact-tel {
+  padding-bottom: 50px;
+  padding-top: 40px;
+}}
 
 .contact-tel h4 {
   text-align: center;
@@ -3086,6 +3095,14 @@ label {
   margin-top: -15px;
   margin-bottom: 30px;
 }
+@media (max-width: 575px) {
+.contact-tel h4 {
+  font-size: 16px;
+}}
+@media (max-width: 346px) {
+.contact-tel h4 {
+  font-size: 14px;
+}}
 
 .contact-tel img {
   max-width: 300px;
@@ -3095,6 +3112,14 @@ label {
   display: block;
   transition: all 0.3s ease 0s;
 }
+@media (max-width: 575px) {
+.contact-tel img {
+  max-width: 250px;
+}}
+@media (max-width: 346px) {
+.contact-tel img {
+  max-width: 230px;
+}}
 .contact-tel img:hover {
   opacity: 0.7;
 }
@@ -3104,11 +3129,70 @@ label {
   padding: 20px 0;
   margin-bottom: 0;
 }
-
+@media (max-width: 382px) {
+.contact-tel p {
+  text-align: justify;
+}}
 .contact-tel table {
   margin-right: auto;
   margin-left: auto;
 }
+
+.contact-check {
+  max-width: 312px;
+}
+
+/* チェックボックスのスタイル */
+.contact-check input[type="checkbox"] {
+  display: none;
+}
+
+/* チェックボックスとラベルのスタイル */
+.contact-check label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #333; /* テキストの色 */
+  font-size: 16px; /* テキストのサイズ */
+}
+
+/* チェックボックスのカスタムスタイル */
+.contact-check label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 52%;
+  transform: translateY(-50%);
+  width: 20px; /* チェックボックスのサイズ */
+  height: 20px;
+  border: 1px solid #333; /* チェックボックスのボーダー */
+  background-color: #fff; /* チェックボックスの背景色 */
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+@media (max-width: 320px) {
+.contact-check label:before {
+  top: 26%;
+}}
+
+
+/* チェックされたときのチェックボックスのスタイル */
+.contact-check input[type="checkbox"]:checked + label:before {
+  background-color: #007BFF; /* チェックされたときのチェックボックスの背景色 */
+  border-color: #007BFF; /* チェックされたときのチェックボックスのボーダー色 */
+  color: #fff; /* チェックされたときのチェックマークの色 */
+  content: "\2713"; /* チェックマーク（ユニコード） */
+  font-weight: bold; /* チェックマークの太さを設定 */
+  font-size: 14px; /* チェックマークのサイズ */
+  line-height: 1;
+  text-align: center;
+}
+
+/* チェックされたときのラベルのスタイル */
+.contact-check input[type="checkbox"]:checked + label {
+  color: #333; /* チェックされたときのテキストの色を変更しない */
+}
+
   /*
 ----------------------
 レスポンシブするテーブル
@@ -3240,7 +3324,10 @@ table-layout: fixed;
     padding: 3px 5px 4px;
     border-radius: 5px;
 }
-  
+@media (max-width: 575px) {
+.required-contactform7 {
+  font-size: 12px;
+}}
   
 .table p {
   color: #ff0000;
@@ -3378,11 +3465,15 @@ table-layout: fixed;
     border-radius: 40px;
     display: block;
     transition: all 0.3s ease 0s;
-    margin-bottom: 45px;
+    margin-bottom: 90px;
     margin-top: -10px;
     background-color: #fff;
     cursor: pointer;
 }
+@media (max-width: 575px) {
+.back-btn button {
+    margin-bottom: 75px;
+}}
 
 .back-btn button:hover {
     background-color: #f29600;
@@ -3418,6 +3509,13 @@ table-layout: fixed;
     border-radius: 40px;
     transition: all 0.3s ease 0s;
 }
+@media (max-width: 575px) {
+.top-info a {
+    font-size: 14px;
+    padding: 18px;
+    width: 230px;
+    margin-bottom: -25px;
+}}
 
 .top-info a:hover {
     background-color: #f29600;
@@ -3581,7 +3679,7 @@ table-layout: fixed;
 }}
 @media (max-width: 575px) {
 .question img {
-  max-width: 100px;
+  max-width: 240px;
 }}
 
 .question p {
@@ -3607,6 +3705,10 @@ table-layout: fixed;
   text-decoration: none;
 }
 
+.question-a li {
+  word-wrap: break-word;
+}
+
 .question-btn a {
     background-color: #f29600;
     color: #fff;
@@ -3624,6 +3726,12 @@ table-layout: fixed;
     transition: all 0.3s ease 0s;
     display: block;
 }
+@media (max-width: 575px) {
+.question-btn a {
+    font-size: 14px;
+    padding: 15px;
+    max-width: 220px;
+}}
 .question-btn a:hover {
     background-color: #f7c066;
     text-decoration: none;
@@ -3687,10 +3795,12 @@ table-layout: fixed;
   @media (max-width: 767px) {
   .menu label {
       padding: 20px;
-      font-size: 16px;
       padding-right: 45px;
 }}
-
+  @media (max-width: 575px) {
+  .menu label {
+    font-size: 14px;
+}}
 .menu label:hover {
     background-color: #fef4e5;
 }
@@ -3852,6 +3962,10 @@ table-layout: fixed;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media (max-width: 690px) {
+.menu img {
+  max-width: 100%;
+}}
 
 .answer {
     color: #59c2e1;
@@ -3969,6 +4083,10 @@ table-layout: fixed;
   border-radius: 0;
   height: auto;
 }
+@media (max-width: 575px) {
+.form-control {
+  font-size: 14px;
+}}
 
 .form-group {
   margin-bottom: 20px;
@@ -4027,6 +4145,61 @@ table-layout: fixed;
  *    新規会員登録
  * ================================================== */
 
+.register-check {
+  max-width: 418px;
+}
+
+/* チェックボックスのスタイル */
+.register-check input[type="checkbox"] {
+  display: none;
+}
+
+/* チェックボックスとラベルのスタイル */
+.register-check label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #333; /* テキストの色 */
+  font-size: 16px; /* テキストのサイズ */
+}
+
+/* チェックボックスのカスタムスタイル */
+.register-check label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 52%;
+  transform: translateY(-50%);
+  width: 20px; /* チェックボックスのサイズ */
+  height: 20px;
+  border: 1px solid #333; /* チェックボックスのボーダー */
+  background-color: #fff; /* チェックボックスの背景色 */
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+@media (max-width: 412px) {
+.register-check label:before {
+  top: 26%;
+}}
+
+/* チェックされたときのチェックボックスのスタイル */
+.register-check input[type="checkbox"]:checked + label:before {
+  background-color: #007BFF; /* チェックされたときのチェックボックスの背景色 */
+  border-color: #007BFF; /* チェックされたときのチェックボックスのボーダー色 */
+  color: #fff; /* チェックされたときのチェックマークの色 */
+  content: "\2713"; /* チェックマーク（ユニコード） */
+  font-weight: bold; /* チェックマークの太さを設定 */
+  font-size: 14px; /* チェックマークのサイズ */
+  line-height: 1;
+  text-align: center;
+}
+
+/* チェックされたときのラベルのスタイル */
+.register-check input[type="checkbox"]:checked + label {
+  color: #333; /* チェックされたときのテキストの色を変更しない */
+}
+
+
 .register_body {
     background-image: linear-gradient( -45deg, #fff 25%, #fefaf2 25%, #fefaf2 50%, #fff 50%, #fff 75%, #fefaf2 75%, #fefaf2 );
     background-size: 20px 20px;
@@ -4036,18 +4209,8 @@ table-layout: fixed;
   margin-bottom: 0px;
 }
 
-.register-ta td {
-  border: none;
+.register-ta {
   color: #ff0000;
-  padding: 0 0;
-}
-
-.register-bl td {
-  color: #000;
-}
-
-.register-ta tr {
-  background: none !important;
 }
 
 .register-pankuzu {
@@ -4104,7 +4267,6 @@ table-layout: fixed;
 .consent {
   margin-left: auto;
   margin-right: auto;
-  max-width: 405px;
   margin-top: 30px;
   margin-bottom: -15px;
 }
@@ -4125,10 +4287,6 @@ table-layout: fixed;
 
 .btn:disabled {
   opacity: 0.5;
-}
-
-.contact-check {
-  max-width: 300px;
 }
 
 .explain {
@@ -4165,6 +4323,10 @@ table-layout: fixed;
   margin-top: -5px;
   margin-bottom: 70px;
 }
+@media (max-width: 575px) {
+.tentative {
+  margin-bottom: 45px;
+}}
 
 .tentative td {
   color: #f29600;
@@ -5024,9 +5186,12 @@ table-layout: fixed;
   margin-right: auto;
   display: block;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
 .arrow {
   max-width: 65px;
+}}
+@media (max-width: 575px) {
+.arrow {
   margin-bottom: -5px;
   margin-top: -5px;
 }}
@@ -5038,6 +5203,10 @@ table-layout: fixed;
   margin-right: auto;
   display: block;
 }
+@media (max-width: 991px) {
+.arrow-2 {
+  max-width: 65px;
+}}
 @media (max-width: 767px) {
 .arrow-2 {
   display: none;
@@ -5100,7 +5269,6 @@ table-layout: fixed;
 }}
 @media (max-width: 991px) {
 .MenuCourse_type_demo h4 {
-  text-align: left;
   padding: 28px 0 20px;
 }}
 @media (max-width: 767px) {
@@ -5126,7 +5294,6 @@ table-layout: fixed;
 }}
 @media (max-width: 991px) {
 .LessonSchool_type_demo h4 {
-  text-align: left;
   padding: 28px 0 20px;
 }}
 @media (max-width: 767px) {
@@ -5147,7 +5314,6 @@ table-layout: fixed;
 }}
 @media (max-width: 991px) {
 .Event_type_demo h4 {
-  text-align: left;
   padding: 28px 0 20px;
 }}
 @media (max-width: 767px) {
@@ -5389,7 +5555,7 @@ table-layout: fixed;
     font-weight: 400;
     border-radius: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
     transition: all 0.3s ease 0s;
 }
 .per-orange-btn a:hover {
@@ -5461,7 +5627,7 @@ table-layout: fixed;
     font-weight: 400;
     border-radius: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
     transition: all 0.3s ease 0s;
 }
 .per-blue-btn a:hover {
@@ -5556,7 +5722,7 @@ table-layout: fixed;
 }
 @media (max-width: 575px) {
 .orange-line {
-  margin-top: 28px;
+  margin-top: 24px;
 }}
 @media (max-width: 360px) {
 .orange-line {
@@ -5579,10 +5745,10 @@ table-layout: fixed;
 }
 @media (max-width: 575px) {
 .explanation h2 {
-  font-size: 20px;
-  max-width: 220px;
-  padding: 8px 0 10px;
-  margin-top: -28px;
+  font-size: 18px;
+  max-width: 205px;
+  padding: 6px 0 8px;
+  margin-top: -24px;
 }}
 @media (max-width: 360px) {
 .explanation h2 {
@@ -5674,9 +5840,37 @@ table-layout: fixed;
 .create-color {
   padding-bottom: 50px;
 }
-@media (max-width: 575px) {
+@media (max-width: 1059px) {
 .create-color {
   padding-bottom: 0px;
+}}
+
+@media (max-width: 991px) {
+.pa-adjustment-1 {
+  padding-bottom: 0px !important;
+}}
+
+@media (max-width: 991px) {
+.pa-adjustment-2 {
+  padding-bottom: 0px !important;
+}}
+
+@media (max-width: 991px) {
+.pa-adjustment-3 {
+  padding-bottom: 0px !important;
+}}
+@media (max-width: 767px) {
+.pa-adjustment-3 {
+  padding-bottom: 15px !important;
+}}
+
+@media (max-width: 991px) {
+.pa-adjustment-4 {
+  margin-bottom: 0 !important;
+}}
+@media (max-width: 575px) {
+.pa-adjustment-4 {
+  margin-bottom: 15px !important;
 }}
 
 .create-mail {
@@ -5817,30 +6011,21 @@ table-layout: fixed;
 
 .edit-s-2-t {
   max-width: 310px !important;
+  font-size: 20px !important;
 }
 @media (max-width: 575px) {
 .edit-s-2-t {
-  font-size: 19px !important;
-  max-width: 265px !important;
-}}
-@media (max-width: 360px) {
-.edit-s-2-t {
-  font-size: 18px !important;
-}}
-@media (max-width: 335px) {
-.edit-s-2-t {
-  font-size: 17px !important;
+  font-size: 16px !important;
+  max-width: 230px !important;
 }}
 
+
 .edit-s-3-t {
-  max-width: 390px !important;
+  max-width: 370px !important;
   margin-bottom: 45px !important;
+  font-size: 20px !important;
 }
 @media (max-width: 575px) {
-.edit-s-3-t {
-  font-size: 17px !important;
-}}
-@media (max-width: 380px) {
 .edit-s-3-t {
   font-size: 16px !important;
 }}
@@ -5891,6 +6076,10 @@ table-layout: fixed;
   background: #00bde1 !important;
   max-width: 298px !important;
 }
+@media (max-width: 575px) {
+.create-page {
+  max-width: 240px !important;
+}}
 
 .blue-line {
   border-bottom: solid 1px #00bde1;
@@ -5950,13 +6139,13 @@ table-layout: fixed;
 
 .overCapacity h2 {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   background: #ed5631;
   padding: 9px 0 11px;
   border-radius: 35px;
-  max-width: 360px;
+  max-width: 340px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -31px;
@@ -6037,6 +6226,12 @@ table-layout: fixed;
 /* ================================================== *
  *    予約ページの運用
  * ================================================== */
+
+@media (max-width: 575px) {
+.arrow-m {
+  margin-bottom: -5px;
+  margin-top: 30px;
+}}
 
 .ope-02 {
   margin-top: 15px;
@@ -6742,10 +6937,10 @@ table-layout: fixed;
 }}
 @media (max-width: 575px) {
 .paid h2 {
-  font-size: 20px;
-  max-width: 240px;
-  padding: 8px 0 10px;
-  margin-top: -28px;
+  font-size: 18px;
+  max-width: 220px;
+  padding: 6px 0 8px;
+  margin-top: -24px;
   margin-bottom: 30px;
 }}
 @media (max-width: 360px) {

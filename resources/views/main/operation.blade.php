@@ -73,7 +73,7 @@
                         <img class="img-fluid" src="{{ asset('img/createpage-image-09.jpg')}}" alt="管理画面">
                     </div>
 
-                    <img class="img-fluid s-arrow" src="{{ asset('img/arrow.svg')}}" alt="矢印">
+                    <img class="img-fluid s-arrow arrow-m" src="{{ asset('img/arrow.svg')}}" alt="矢印">
     
                     <div class="row ope-p">
                         <div class="col-sm-6">

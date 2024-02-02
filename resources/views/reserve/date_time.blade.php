@@ -7,7 +7,8 @@
 <div class="r-page-body">
     <div class="reserve-form">
     	<div class="reservestep">
-    	    <img src="{{ asset('img/reservestep-1.svg')}}" class="img-fluid" alt="日時・人数の選択">
+    	    <img src="{{ asset('img/reservestep-1.svg')}}" class="img-fluid d-none d-sm-block" alt="日時・人数の選択">
+    	    <img src="{{ asset('img/reservestep-1-s.svg')}}" class="img-fluid d-block d-sm-none" alt="日時・人数の選択">
     	</div>
 
         <form id="form" method="POST" name="form1" action="/reserve/{{ $page_address }}/{{ $reservepage->id }}/date_time/customer">
@@ -38,7 +39,7 @@
             
             <div class="do_reserve do_date">    
                 <label for="date"><span class="step">STEP.1</span> 日にち</label>
-                <input id='date' name="do_date" class="fieldset__input js__datepicker form-doreserve contact-textbox" type="text" placeholder="選択してください" onchange="timestep()"></br></br>
+                <input id='date' name="do_date" class="fieldset__input js__datepicker form-doreserve contact-textbox date-ma" type="text" placeholder="選択してください" onchange="timestep()"></br></br>
             </div>
             
             <div class="do_reserve">
