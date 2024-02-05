@@ -238,7 +238,7 @@
                 <br>
                 運営事業者：STARTING DESIGN（スターティングデザイン）<br>
                 代表：天野 隼人<br>
-                メールアドレス：amano.h@starting-design.com</p> 
+                メールアドレス：yoyakuma@starting-design.com</p> 
             </article>
 
         </div>  

@@ -32,7 +32,8 @@
                 <p>予約ページの編集画面は、作成されている予約ページが一覧で表示されます。以下が「予約ページ編集」画面になります。</p>
                 
                 <div class="scroll-image">
-                    <img class="img-fluid" src="{{ asset('img/edit-image-01.jpg')}}" alt="予約ページ編集">
+                    <img class="img-fluid d-none d-sm-block" src="{{ asset('img/edit-image-01.jpg')}}" alt="予約ページ編集">
+                    <img class="img-fluid d-block d-sm-none" src="{{ asset('img/edit-image-01-s.jpg')}}" alt="予約ページ編集">
                 </div>
                 
                 <p>各予約ページに対してタイトルとイメージ画像が反映され、「基本情報」「日時・定員数」「表示 <i class="icon-another-window_black"></i>」「削除」の項目があります。<br>
@@ -46,7 +47,8 @@
                     <p>「基本情報」をクリックすると、予約ページ基本情報の編集画面になります。</p>
                     
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/edit-image-02.jpg')}}" alt="基本情報の編集">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/edit-image-02.jpg')}}" alt="基本情報の編集">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/edit-image-02-s.jpg')}}" alt="基本情報の編集">
                     </div>
                     
                     <p>現在設定されている内容が各項目に設定されており、編集をしたい項目の内容を変更して「更新」をクリックすると、変更が予約ページに反映されます。</p>
@@ -59,7 +61,8 @@
                     <p>「日時・定員数」をクリックすると、日時・定員数の編集画面になり、現在設定されている日時に対してカレンダーに色が付いています。</p>
                
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/edit-image-03.jpg')}}" alt="日時・定員数の編集">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/edit-image-03.jpg')}}" alt="日時・定員数の編集">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/edit-image-03-s.jpg')}}" alt="日時・定員数の編集">
                     </div>
                 
                     <img class="img-fluid s-arrow" src="{{ asset('img/arrow.svg')}}" alt="矢印">
@@ -83,10 +86,12 @@
                         <h4 class="aratani">❷ 新たに日時・定員数を追加</h4>
                         <div class="row setting">
                             <div class="col-sm-6">
-                                <img class="img-fluid capture" src="{{ asset('img/edit-image-05.jpg')}}" alt="❷ 新たに日時・定員数を追加<">
+                                <img class="img-fluid capture d-none d-lg-block" src="{{ asset('img/edit-image-05.jpg')}}" alt="❷ 新たに日時・定員数を追加<">
+                                <img class="img-fluid capture d-block d-lg-none" src="{{ asset('img/create-image-03-s.jpg')}}" alt="❷ 新たに日時・定員数を追加<">
                             </div>
                             <div class="col-sm-6">
-                                <p>新たに日時・定員数を追加したい場合は、予約ページ作成時と同様に、カレンダーを<strong>直接クリック</strong>すると設定が行えます。</p>
+                                <p class="d-none d-lg-block">新たに日時・定員数を追加したい場合は、予約ページ作成時と同様に、カレンダーを<strong>直接クリック</strong>すると設定が行えます。</p>
+                                <p class="d-block d-lg-none">新たに日時・定員数を追加したい場合は、予約ページ作成時と同様に、カレンダーを<strong>長押し</strong>すると設定が行えます。</p>
                             </div>
                         </div>
                     </div>

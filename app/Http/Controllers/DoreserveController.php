@@ -177,12 +177,19 @@ class DoreserveController extends Controller
 
      public function completion(Request $request, $page_address, $reservepage_id) {
          
-        $do_reserve; // 変数を定義
-        $do_reserve_list = $request->session()->get('do_reserve_list'); // セッションでdo_reserve_listを取得し、$do_reserve_listに代入
+        $do_reserve = null; // 変数を初期化
+        $do_reserve_list = $request->session()->get('do_reserve_list', []); // セッションからdo_reserve_listを取得し、空の場合は空の配列をデフォルト値として使用
+    
         foreach ($do_reserve_list as $data) { // $do_reserve_list配列内の要素を順に処理し、各要素を$dataという変数に代入
-            if ($data->reservepage_id == $reservepage_id ) { // $dataのreservepage_idが、$reservepage_idと等しい場合
+            if ($data->reservepage_id == $reservepage_id) { // $dataのreservepage_idが、$reservepage_idと等しい場合
                 $do_reserve = $data; // $dataのデータを$do_reserveに代入
+                break; // 繰り返し終了
             }
+        }
+
+        if (!$do_reserve) {
+            // $do_reserveが見つからない場合、エラー処理やリダイレクトなど適切な対応を行う
+            return redirect('/reserve/' . $page_address . '/' . $reservepage_id);
         }
         
         // Calendarモデルから指定されたcalendar_idのカレンダーを取得

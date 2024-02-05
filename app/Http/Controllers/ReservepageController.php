@@ -81,8 +81,13 @@ class ReservepageController extends Controller
         // 予約作成ページ情報を取得
         $reservepage = $request->session()->get('reservepage'); // セッションからreservepageを取得し、$reservepageに代入
         
-        if ($user->member_flag == 0) { // 無料会員の場合（member_flagが0の場合）
-            $reservepage->release = 1; // 非公開状態にする（releaseに1を与える）
+       if ($user->member_flag == 0) { // 無料会員の場合（member_flagが0の場合）
+            if ($reservepage) {
+                $reservepage->release = 1; // 非公開状態にする（releaseに1を与える）
+            } else {
+                // $reservepageが空の場合（更新マークをクリックした場合）は、ホームページにリダイレクト
+                return redirect()->route('home');
+            }
         }
         
         if ($reservepage) {

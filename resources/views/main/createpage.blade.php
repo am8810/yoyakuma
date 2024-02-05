@@ -33,7 +33,8 @@
                 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-01.jpg')}}" alt="作成される予約ページ">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-01.jpg')}}" alt="作成される予約ページ">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-01-s.jpg')}}" alt="作成される予約ページ">
                     </div>
     
                     <p>予約ページ作成の基本情報で設定した「タイトル」「説明文」「イメージ画像」「ロゴマーク画像」「予約価格」「日時・人数の変更について」「キャンセルについて」が反映されています。ロゴマークの横に「提供者」の表示があり、この部分はヨヤクマの会員登録時に設定した「企業名・屋号名・団体名」が反映されます。<br>
@@ -44,7 +45,8 @@
                 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-02.jpg')}}" alt="日時・人数の選択">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-02.jpg')}}" alt="日時・人数の選択">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-02-s.jpg')}}" alt="日時・人数の選択">
                     </div>
                     
                     <p>「日時・人数の選択」画面では、「予約対象」「日にち」「時間」「予約人数」の項目があり、予約したい日時と人数を選択することができます。</p>
@@ -120,7 +122,8 @@
                 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-06.jpg')}}" alt="お客様情報">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-06.jpg')}}" alt="お客様情報">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-06-s.jpg')}}" alt="お客様情報">
                     </div>
     
                     <p>「お客様情報」ページでは、予約をされる方の「お名前」「フリガナ」「電話番号」「メールアドレス」を入力していただきます。ここで入力していただいた情報が顧客情報となり、管理画面で確認することができます。<br>
@@ -131,7 +134,8 @@
 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-07.jpg')}}" alt="内容確認">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-07.jpg')}}" alt="内容確認">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-07-s.jpg')}}" alt="内容確認">
                     </div>
     
                     <p>「内容確認」ページでは、予約対象、予約日時、予約人数、合計金額、予約に関しての注意事項、予約者様情報が表記され、予約申込み前に予約内容を最終確認することができます。<br>
@@ -142,7 +146,8 @@
 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-08.jpg')}}" alt="予約完了">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-08.jpg')}}" alt="予約完了">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-08-s.jpg')}}" alt="予約完了">
                     </div>
     
                     <p>「予約完了」になると、管理者と予約をされた方に自動通知メールが送信されます。予約者様のメールアドレスに「予約完了のお知らせ」メールが送信され、管理者には「予約が入りました」メールが送信されます。管理者への自動通知メールは複数アドレスで受信可能です。<br>
@@ -153,7 +158,8 @@
 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-09.jpg')}}" alt="管理画面">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-09.jpg')}}" alt="管理画面">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-09-s.jpg')}}" alt="管理画面">
                     </div>
                     
                     <p class="reflection">予約がされると、管理画面のトップページにあるカレンダーに予約が反映されます。反映された予約をクリックすると予約内容が表示され、予約対象と予約日時、予約者様のお名前と人数、合計金額が確認できます。また、この日時の予約に対しての「残り予約可能人数」も確認することができます。</p>

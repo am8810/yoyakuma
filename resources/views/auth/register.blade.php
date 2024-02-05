@@ -118,7 +118,7 @@
                     <tr style="background-color: #fff;">
                         <th><span class="title-contactform7">業種</span></th>
                         <td>
-                            <select size="1" class="form-control @error('industry') is-invalid @enderror samazon-login-input" name="industry">
+                            <select size="1" class="form-control @error('industry') is-invalid @enderror samazon-login-input industry" name="industry">
                                 <option value="" hidden>選択してください</option>
                                 <option value="1">レストラン・居酒屋・カフェ</option>
                                 <option value="2">医療・健康・介護</option>

@@ -19,7 +19,7 @@
     <div id="member-edit" class="s-container user-page-icon">
         <div class="member-top-body">
             <img src="{{ asset('img/user-icon-1.jpg')}}">
-            <h1 class="mypage-title">会員情報</h1>
+            <h1 class="mypage-title mem-m">会員情報</h1>
     
     
             <form method="POST" action="/users/mypage">

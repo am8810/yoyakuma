@@ -70,7 +70,8 @@
                     以下が、管理画面トップページのカレンダーに予約が反映された状態の表示になります。</p>
                     
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/createpage-image-09.jpg')}}" alt="管理画面">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/createpage-image-09.jpg')}}" alt="管理画面">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/createpage-image-09-s.jpg')}}" alt="管理画面">
                     </div>
 
                     <img class="img-fluid s-arrow arrow-m" src="{{ asset('img/arrow.svg')}}" alt="矢印">

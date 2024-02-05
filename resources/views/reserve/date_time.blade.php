@@ -44,7 +44,7 @@
             
             <div class="do_reserve">
                 <label for="calendar_time"><span class="step">STEP.2</span> 時間</label>
-                <select id="calendar_time" name="calendar_id" class="form-doreserve contact-textbox" type="text" placeholder="選択してください" onchange="do_capacitystep()">
+                <select id="calendar_time" name="calendar_id" class="form-doreserve contact-textbox time-select" type="text" placeholder="選択してください" onchange="do_capacitystep()">
                     <option value="">選択してください</option>
                     <option value="1"></option>
                 </select>
@@ -52,7 +52,7 @@
 
             <div class="do_reserve">
                 <label for="do_capacity"><span class="step">STEP.3</span> 予約人数</label>
-                <select id="do_capacity" name="do_capacity" class="form-doreserve contact-textbox">
+                <select id="do_capacity" name="do_capacity" class="form-doreserve contact-textbox capa-select">
                     <option value>選択してください</option>
                     <option value="1">1人</option>
                     <option value="2">2人</option>

@@ -50,7 +50,7 @@
                     </tr>
                     <tr>
                         <th><span class="title-contactform7">営業時間</span></th>
-                        <td>10：00〜20：00（土日祝を除く）</td>
+                        <td>10：00〜18：00（土日祝を除く）</td>
                     </tr>
                     <tr>
                         <th><span class="title-contactform7">メールアドレス</span></th>

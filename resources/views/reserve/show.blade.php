@@ -48,7 +48,9 @@
                             </table>
                         </div>
                         @else
-                        <a href="javascript:form1.submit()" role="button">予約する <i class="fas fa-angle-right"></i></a>
+                        <div class="reserve-btn">
+                            <a href="javascript:form1.submit()" role="button">予約する <i class="fas fa-angle-right"></i></a>
+                        </div>
                         @endif
                     </form>
                 

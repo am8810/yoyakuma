@@ -69,7 +69,7 @@
 
             <img src="{{ asset('img/browser.jpg')}}" alt="各ブラウザ">
             
-            <h4>仮会員登録を行ったブラウザと<br class="display-xs">同じブラウザで本会員登録を行ってください。</h4>
+            <h4>1時間以内に、仮会員登録を行ったブラウザと<br class="display-xs">同じブラウザで本会員登録を行ってください。</h4>
 
 		</div>
 		

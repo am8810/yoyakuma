@@ -32,7 +32,8 @@
                 <p>予約ページはまず、「基本情報」の設定を行い、次に「日程・定員数」の設定を行って作成します。<br>以下が「基本情報」の設定画面になります。</p>
                 
                 <div class="scroll-image">
-                    <img class="img-fluid" src="{{ asset('img/create-image-01.jpg')}}" alt="予約ページ作成　1ページ目（基本情報の入力）">
+                    <img class="img-fluid d-none d-sm-block" src="{{ asset('img/create-image-01.jpg')}}" alt="予約ページ作成　1ページ目（基本情報の入力）">
+                    <img class="img-fluid d-block d-sm-none" src="{{ asset('img/create-image-01-s.jpg')}}" alt="予約ページ作成　1ページ目（基本情報の入力）">
                 </div>
                 
                 <p>それぞれの項目について、どのような設定が可能がご説明します。</p>
@@ -142,11 +143,13 @@
                 
                 <article>
                     <div class="scroll-image">
-                        <img class="img-fluid" src="{{ asset('img/create-image-02.jpg')}}" alt="予約ページ作成　2ページ目（日程・定員数）">
+                        <img class="img-fluid d-none d-sm-block" src="{{ asset('img/create-image-02.jpg')}}" alt="予約ページ作成　2ページ目（日程・定員数）">
+                        <img class="img-fluid d-block d-sm-none" src="{{ asset('img/create-image-02-s.jpg')}}" alt="予約ページ作成　2ページ目（日程・定員数）">
                     </div>
                     
                     <div class="date-note">
-                        <p>日時・定員数はカレンダーを<strong>直接クリック</strong>すると設定が行えます。また、<strong>日時・定員数の設定は複数行うことが可能です。</strong></p>
+                        <p class="d-none d-lg-block">日時・定員数はカレンダーを<strong>直接クリック</strong>すると設定が行えます。また、<strong>日時・定員数の設定は複数行うことが可能です。</strong></p>
+                        <p class="d-block d-lg-none">日時・定員数はカレンダーを<strong>長押し</strong>すると設定が行えます。また、<strong>日時・定員数の設定は複数行うことが可能です。</strong></p>
                         
                         <table>
                           <tbody>
@@ -162,10 +165,12 @@
     
                     <div class="row setting">
                         <div class="col-sm-6">
-                            <img class="img-fluid capture" src="{{ asset('img/create-image-03.jpg')}}" alt="日程・定員数　設定1">
+                            <img class="img-fluid capture d-none d-lg-block" src="{{ asset('img/create-image-03.jpg')}}" alt="日程・定員数　設定1">
+                            <img class="img-fluid capture d-block d-lg-none" src="{{ asset('img/create-image-03-s.jpg')}}" alt="日程・定員数　設定1">
                         </div>
                         <div class="col-sm-6">
-                            <p>予約を受けたい日時のカレンダーを<strong>直接クリック</strong>します。</p>
+                            <p class="d-none d-lg-block">予約を受けたい日時のカレンダーを<strong>直接クリック</strong>します。</p>
+                            <p class="d-block d-lg-none">予約を受けたい日時のカレンダーを<strong>長押し</strong>します。</p>
                         </div>
                     </div>
                     

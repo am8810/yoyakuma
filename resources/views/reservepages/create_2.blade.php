@@ -50,7 +50,8 @@
   	</div>
   	
   	<div class="flow-2">
-  	    <h3>日時・定員数はカレンダーを<strong>直接クリック</strong>すると設定が行えます。</h3>
+  	    <h3 class="d-none d-lg-block">日時・定員数はカレンダーを<strong>直接クリック</strong>すると設定が行えます。</h3>
+        <h3 class="d-block d-lg-none">日時・定員数はカレンダーを<strong>長押し</strong>すると設定が行えます。</h3>
   	    <p>（日時・定員数の設定は複数行うことが可能です。）</p>
   	    
   	    <div class="straddle">
@@ -65,7 +66,7 @@
     	      </tr>
     	      <tr>
     	        <td>※</td>
-    	        <td>カレンダーを直接触って日時を変更した場合は、「登録」をクリックする必要があります。</td>
+    	        <td>カレンダーを直接移動して日時を変更した場合は、「登録」をクリックする必要があります。</td>
     	      </tr>
     	      <tr>
     	        <td>※</td>
@@ -117,14 +118,14 @@
             <table class="date_time_t">
               <tr class="r-date">
                 <td class="d-conts">日にち</td>
-                <td>
+                <td class="date-css">
                   <input id="date" name="date" class="fieldset__input js__datepicker" type="text" placeholder="選択してください">
                 </td>
               </tr>
               
               <tr>
                 <td class="d-conts">時間</td>
-                <td>
+                <td class="time-css">
                   <select id="start_time" name="start_time" type="text" placeholder="00:00">
                     <!-- 00:00から23:45を15分ごとに作成 -->
                     <?php
@@ -161,7 +162,7 @@
               
               <tr class="r-capa">
                 <td class="d-conts">定員数</td>
-                <td>
+                <td class="reca-css">
                   <input id="reservepage-capacity" name="capacity" type="number" placeholder="00">人
                 </td>
               </tr>

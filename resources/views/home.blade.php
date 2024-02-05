@@ -18,7 +18,7 @@
         </div>
         
         <div class="reserv-status">
-            <h2>予約状況</h2>
+            <h2>予約カレンダー</h2>
         </div>
 
         <div id='calendar'></div>
